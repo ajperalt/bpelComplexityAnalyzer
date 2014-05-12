@@ -1,0 +1,433 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Propuesta de tesis Magister TI
+\end_layout
+
+\begin_layout Author
+Alvaro Jose Peralta
+\end_layout
+
+\begin_layout Section
+Introducción
+\end_layout
+
+\begin_layout Standard
+En el contexto empresarial la constante que más resalta es la variabilidad
+ de los procesos de negocio que es ocasionada por la dinámica de crecimiento
+ constante y mejora continua a la que las organizaciones están sometidas
+ en un ambiente de alta competitividad .
+ Realidades del negocio como fusiones corporativas, cadenas de valor distribuida
+s, nuevas tecnologías, nuevas formas de negocio, clientes formados tecnológicame
+nte.
+ Ha ocasionado requerimientos muy exigentes al área de TI que día a día
+ se ve afrontada a brindar soluciones innovadoras, en menor tiempo con menor
+ costo de inversión 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "libroInteroperabilidadDCC2009"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Este hecho fundamental ha generado toda una industria que durante el principio
+ de este siglo ha florecido por presentar una solución profesional dentro
+ de esta dinámica heterogenia de operaciones altamente interconectadas,
+ de requerimientos cambiantes con una alta necesidad de reutilización de
+ factores críticos de éxito.
+\end_layout
+
+\begin_layout Standard
+Esta solución propuesta por la industria es conocida actualmente como “Arquitect
+uras Orientadas a Servicio” o SOA por sus siglas en inglés, que 
+\end_layout
+
+\begin_layout Standard
+principal respuesta para lograr coordinar la dinámica en la interacción
+ de los diferentes actores que son involucrados en la cadena de valor de
+ las organizaciones, su principal objetivo es la reutilización de “servicios”
+ que ya funcionan en la organización disminuyendo la complejidad en la integraci
+ón de procesos.
+\end_layout
+
+\begin_layout Standard
+Esta coordinación es desarrollada básicamente por dos conceptos elaborados
+ en el contexto SOA denominados orquestación y coreografía que cumplen un
+ papel análogo a su definición natural permitiendo que los actores logren
+ completar cierta sinergia gracias a la elaboración de flujos de trabajo
+ desarrollado por el esfuerzo conjunto entre el área de TI y de negocio
+ que en adelante llamaremos procesos de negocio web.
+\end_layout
+
+\begin_layout Standard
+Estos procesos de negocio no son muy diferentes de los denominados workflows
+ o flujos de trabajo, representan más bien una evolución tecnología.
+ Mientras que los workflows invocan tareas, los procesos web invocan servicios
+ web 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cardoso2008"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Al parecer la facilidad con que estos procesos de negocio son desarrollados
+ y mantenidos gracias al uso de lenguajes estandarizados por la W3C como
+ por ejemplo: (WS-BPEL 2005).Que es implementado en soluciones SOA lo que
+ ha generado un gran adelanto tecnológico en la relación Negocio-TI.
+\end_layout
+
+\begin_layout Standard
+Sin embargo la realidad de “adaptación al cambio constante” no ha cambiado
+ en su esencia misma, ocasionando que cada vez más los procesos de negocio
+ sigan evolucionando y ampliando su complejidad tanto en requerimientos
+ funcionales como no funcionales, por lo que aun teniendo una arquitectura
+ tan robusta como lo es la propuesta en el contexto SOA los atributos de
+ calidad del software que aún se aplican en lenguajes como BPEL siguen siendo
+ una preocupación tanto para el área de TI como para el negocio en sí mismo.
+ 
+\end_layout
+
+\begin_layout Section
+Problema a resolver / Oportunidad de Mejora
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Contexto:
+\emph default
+ Análisis de procesos de negocio orientados a la web en situaciones de alta
+ complejidad con requerimientos funcionales cambiantes en un entorno de
+ arquitecturas orientadas a servicio.
+\end_layout
+
+\begin_layout Standard
+La oportunidad de mejora se centra en lo que hemos llamado “complejidad
+ de procesos de negocio web” debido a que esta se produce en el proceso
+ de desarrollo no está exenta de los mismos problemas al construir un software
+ tradicional, por ejemplo: inyección de defectos, excepciones inesperadas,
+ poca comprensión del proceso.
+ Lo que a este nivel de abstracción puede ser un costo tremendo tanto el
+ proceso de desarrollo como en el impacto en el negocio.
+\begin_inset Float figure
+placement p
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Fusion Order Demo 11.1.1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/FusionOrderDemoFlow.png
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tomemos como ejemplo el caso de estudio que propone la suite de Oracle SOA
+ Suite, de nombre Fusion Order Demo [2] que simula el comportamiento de
+ una empresa internacional de retail como Fallabela o París conocidas en
+ el contexto chileno.
+\end_layout
+
+\begin_layout Standard
+El servicio que nos interesa observar del ejemplo puntualmente es la ejecución
+ del proceso de orden de compra, siendo este el flujo de proceso que se
+ necesita para llevar a cabo una compra de un grupo de ítems previamente
+ seleccionados de un carrito de compras hasta su envió y notificación al
+ cliente de que su orden le ha sido enviada por un proveedor de transporte
+ físico.
+\end_layout
+
+\begin_layout Standard
+Para lograr este objetivo el proceso de negocio tiene que interactuar con
+ múltiples actores dentro de la cadena de valor además de ejecutar ciertas
+ instrucciones de negocio para determinar para producir el flujo esperado.
+ 
+\end_layout
+
+\begin_layout Standard
+Suponiendo que esta introducción sea una reunión inicial que el área de
+ TI tenga con el área de negocio para su nuevo proyecto SOA.
+ Nuestro equipo se ve obligado a definir una propuesta de alcance, partiendo
+ de su experiencia y de métricas de procesos similares, pero: 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Problema 1 
+\end_layout
+
+\begin_layout Standard
+Al no tener métricas recolectadas de procesos anteriores o en su defecto
+ no poder dimensionar métricas de procesos ejemplo, No se puede estar seguro
+ del tamaño y/o complejidad de lo que se nos está pidiendo, este ha sido
+ un problema recurrente y estudiado en varias publicasiones como 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cardoso2008,Cardoso2006,Budnik2011"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Debido al primer problema encontrado, la propuesta de alcance se construye
+ desde la labor heurística del arquitecto líder, que puede prometer cualidades
+ del software que no lo comprometan.
+ Por ejemplo: Un grado de mantenibilidad del 80% y una complejidad MEDIA
+ de la lógica del proceso.
+ Medidas que para la promesa de la arquitectura SOA son totalmente inadecuadas.
+\end_layout
+
+\begin_layout Standard
+El caso inicial de la primera iteración nos llevara a construir un proceso
+ de negocio que en términos de 
+\emph on
+calidad
+\emph default
+ dependerá de cuan avanzados estemos como organización en los 
+\emph on
+niveles de madures SOA
+\begin_inset CommandInset citation
+LatexCommand cite
+key "IBMSOAG2006"
+
+\end_inset
+
+
+\emph default
+ , por lo que:
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Problema 2
+\emph default
+ 
+\end_layout
+
+\begin_layout Standard
+Al no tener definido un marco de trabajo con el que podamos valorar característi
+cas inherentes al software BPEL (Proceso de negocio), tendremos poca visualizaci
+ón en varias perspectivas de la calidad de nuestro desarrollo, por ejemplo
+ Budnik 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Budnik2011"
+
+\end_inset
+
+ menciona preocupaciones como productividad , reducción de costos y riesgos
+ entre otras.
+ 
+\end_layout
+
+\begin_layout Standard
+Llegados a este punto la confianza del área de negocio en el éxito del proyecto
+ radica en la habilidades humanas que entregan los consultores SOA al equipo
+ de desarrollo, que para este caso contextual finalizan el proceso, entregando
+ un proceso probado finalizando así su compromiso con el proyecto.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Problema 3 
+\end_layout
+
+\begin_layout Standard
+Para el arquitecto de TI que tiene la responsabilidad de recibir dichas
+ pruebas, debe valerse de herramientas como inspecciones de código para
+ poder decidir si hay completitud y suficiente esfuerzo de pruebas que avalen
+ la afirmación de los consultores, lo que se convierte en una actividad
+ que agrega esfuerzo adicional al proyecto, Lubke and Singer 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "DanielLubke2009"
+
+\end_inset
+
+ comparten el problema al proponer un mecanismo para verificar cobertura
+ de pruebas realizadas a los procesos BPEL.
+ 
+\end_layout
+
+\begin_layout Standard
+Continuando con la característica mencionada en la introducción de esta
+ propuesta de tesis que hace referencia a la constante “cambio” en el negocio,
+ los estudios indican que el 38% de las soluciones con procesos de negocio
+ se les aplicara un proceso de rediseño en toda la organización (Delphi
+ Group, 2002) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cardoso2008"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+De igual forma durante la producción de los procesos de negocio es decir
+ las iteraciones que 
+\end_layout
+
+\begin_layout Standard
+Lo que nos lleva a pensar el posible éxito que logremos con este proceso,
+ con lleve a nuevas modificaciones y a controles de cambio para adaptarnos
+ a nuevas facetas de órdenes de compra.
+ 
+\end_layout
+
+\begin_layout Section
+Justificación de la propuesta
+\end_layout
+
+\begin_layout Subsection
+Resultados Esperados / Relevancia de la investigación
+\end_layout
+
+\begin_layout Section
+Objetivo General
+\end_layout
+
+\begin_layout Standard
+Diseñar e implementar de una herramienta que permita la valoración y el
+ análisis del diseño de procesos de negocio construidos en BPEL.
+\end_layout
+
+\begin_layout Subsection
+Objectivos Específicos
+\end_layout
+
+\begin_layout Itemize
+Definir un proceso metodológico básico que permita realizar valoración de
+ procesos de negocio construidos en BPEL.
+ 
+\end_layout
+
+\begin_layout Itemize
+Investigar y/o elaborar al menos 2 indicadores por cualidad de software
+ relevante en la elaboración de procesos de negocio web.
+ 
+\end_layout
+
+\begin_layout Itemize
+Diseñar una herramienta que permita de manera flexible generar nuevas visualizac
+iones complejidad en proceso de negocio y sus indicadores.
+ 
+\end_layout
+
+\begin_layout Itemize
+Aplicar el proceso metodológico propuesto de valoración de procesos web
+ dentro de un contexto organizacional.}
+\end_layout
+
+\begin_layout Section
+Metodología / Plan de trabajo
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "MGTI"
+options "bibtotoc,plain"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,164 @@
+% This file was created with JabRef 2.10.
+% Encoding: Cp1252
+
+
+@Article{Budnik2011,
+  Title                    = {Dynamic Analysis of Enterprise Business Scenarios},
+  Author                   = {Lukasz Budnik and Henryk Krawczyk},
+  Journal                  = {IEEE International Enterprise Distributed Object Computing Conference Workshop},
+  Year                     = {2011},
+  Number                   = {1},
+  Pages                    = {1},
+  Volume                   = {1},
+
+  Owner                    = {alvarojose},
+  Timestamp                = {2014.05.12}
+}
+
+@Article{Cardoso2008,
+  Title                    = {Business Processes Control-Flow Complexity: Metric,Evaluation, And Validation},
+  Author                   = {Jorge Cardoso},
+  Journal                  = {International Journal of Web Services Research},
+  Year                     = {2008},
+  Number                   = {1},
+  Pages                    = {27},
+  Volume                   = {1},
+
+  Owner                    = {alvarojose},
+  Timestamp                = {2014.05.12}
+}
+
+@Article{Cardoso2006,
+  Title                    = {Complexity Analysis of BPEL Web Processes},
+  Author                   = {Jorge Cardoso},
+  Journal                  = {Software Process:Improvement and Practice Journal},
+  Year                     = {2006},
+  Pages                    = {10},
+  Volume                   = {1},
+
+  Owner                    = {alvarojose},
+  Timestamp                = {2014.05.12}
+}
+
+@Manual{IBMSOAG2006,
+  Title                    = {Effective SOA Governance},
+  Author                   = {Kerrie Holley and Jim Palistrant and Steve Graham},
+  Organization             = {IBM},
+  Year                     = {2006},
+
+  Owner                    = {alvarojose},
+  Timestamp                = {2014.05.12},
+  Url                      = {http://docs.oracle.com/cd/E12839\_{}01/integration.1111/e10275.pdf}
+}
+
+@Article{DanielLubke2009,
+  Title                    = {Calculating BPEL Test Coverage through Instrumentation},
+  Author                   = {Daniel Lubke and Leif Singer},
+  Journal                  = {ICSE 09 Workshop},
+  Year                     = {2009},
+  Number                   = {1},
+  Pages                    = {1},
+  Volume                   = {1},
+
+  Owner                    = {alvarojose},
+  Timestamp                = {2014.05.12}
+}
+
+@Manual{OracleFOD,
+  Title                    = {Fusion Order Demo Tutorial},
+  Author                   = {Oracle},
+  Organization             = {Oracle},
+
+  Owner                    = {alvarojose},
+  Timestamp                = {2014.05.12},
+  Url                      = {http://docs.oracle.com/cd/E12839\_{}01/integration.1111/e10275.pdf}
+}
+
+@Article{QingqingZhang2009,
+  Title                    = {Complexity MMetric for Service-Oriented Systems},
+  Author                   = {Qingqing Zhang,Xinke Li},
+  Journal                  = {Second International Symposium on KnowledgeAcquisition and Modeling},
+  Year                     = {2009},
+  Pages                    = {1},
+  Volume                   = {1},
+
+  Owner                    = {alvarojose},
+  Timestamp                = {2014.05.12}
+}
+
+@InCollection{raey,
+  Title                    = {Analysis and Validation of Control-Flow Complexity Measures with BPMN Process Models},
+  Author                   = {RolÃ³n, Elvira and Cardoso, Jorge and GarcÃ­a, FÃ©lix and Ruiz, Francisco and Piattini, Mario},
+  Booktitle                = {Enterprise, Business-Process and Information Systems Modeling},
+  Publisher                = {Springer Berlin Heidelberg},
+  Year                     = {2009},
+  Editor                   = {Halpin, Terry and Krogstie, John and Nurcan, Selmin and Proper, Erik and Schmidt, Rainer and Soffer, Pnina and Ukor, Roland},
+  Pages                    = {58-70},
+  Series                   = {Lecture Notes in Business Information Processing},
+  Volume                   = {29},
+
+  Doi                      = {10.1007/978-3-642-01862-6_6},
+  ISBN                     = {978-3-642-01861-9},
+  Keywords                 = {Business process models; BPMN; measurement; validation},
+  Owner                    = {alvarojose},
+  Timestamp                = {2014.05.12},
+  Url                      = {http://dx.doi.org/10.1007/978-3-642-01862-6_6}
+}
+
+@Article{10.1109/APSCC.2007.36,
+  Title                    = {Efficient Analysis of BPEL 2.0 Processes Using p-Calculus},
+  Author                   = {Matthias Weidlich and Gero Decker and Mathias Weske},
+  Journal                  = {Asia-Pacific Conference on Services Computing. 2006 IEEE},
+  Year                     = {2007},
+  Pages                    = {266-274},
+  Volume                   = {0},
+
+  Address                  = {Los Alamitos, CA, USA},
+  Doi                      = {http://doi.ieeecomputersociety.org/10.1109/APSCC.2007.36},
+  ISBN                     = {0-7695-3051-6},
+  Owner                    = {alvarojose},
+  Publisher                = {IEEE Computer Society},
+  Timestamp                = {2014.05.12}
+}
+
+@InProceedings{4976736,
+  Title                    = {Measuring Performance Metrics of WS-BPEL Service Compositions},
+  Author                   = {Wetzstein, B. and Strauch, S. and Leymann, F.},
+  Booktitle                = {Networking and Services, 2009. ICNS '09. Fifth International Conference on},
+  Year                     = {2009},
+  Month                    = {April},
+  Pages                    = {49-56},
+
+  Abstract                 = {In this paper we present an approach to the development of monitoring solutions for processes implemented as WSBPEL service compositions. The approach allows modeling of process performance metrics in a platform-independent manner and then generating an event-based monitor model for a specific WS-BPEL process engine. We create a metamodel which enables modeling of different types of process performance metrics. In particular, our approach supports modeling of metrics related to correlated processes. In the deployment phase, we generate a monitor model based on a proprietary event metamodel of a process engine. In addition, we determine which events are needed for the calculation of PPMs, and generate corresponding deployment information for the process engine.},
+  Doi                      = {10.1109/ICNS.2009.80},
+  Keywords                 = {Web services;business data processing;WS-BPEL process engine;WS-BPEL service composition;business process lifecycle management;event-based monitor model;metamodel;process performance metrics modeling;Business communication;Context modeling;Context-aware services;Engines;Magnesium compounds;Measurement;Monitoring;Organizing;Service oriented architecture;Web services;Business Activity Monitoring;Process Performance Measurement;Process Performance Metrics;WS-BPEL},
+  Owner                    = {alvarojose},
+  Timestamp                = {2014.05.12}
+}
+
+@Article{YongyanZhen2007,
+  Title                    = {Analysis of BPEL Data Dependencies},
+  Author                   = {Yongyan Zhen,Jion Zhou,Paul Krause},
+  Journal                  = {33rd EUROMICRO Conference on Software Engineering And Advanced Applications SEAA},
+  Year                     = {2007},
+
+  Month                    = {11},
+  Number                   = {1},
+  Pages                    = {1},
+  Volume                   = {1},
+
+  Owner                    = {alvarojose},
+  Timestamp                = {2014.05.12}
+}
+
+@Book{libroInteroperabilidadDCC2009,
+  Title                    = {Documentación Electronica e Interoperabilidad de la Informacion},
+  Editor                   = {Sergio F.Ochoa,Cecilia Bastarrica,Claudio Gutiérrez},
+  Publisher                = {Universidad de Chile DCC},
+  Year                     = {2009},
+
+  Owner                    = {alvarojose},
+  Timestamp                = {2014.05.12},
+  Url                      = {www.dcc.uchile.cl/librointeroperabilidad}
+}
+

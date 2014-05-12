@@ -1,0 +1,108 @@
+%% LyX 2.0.7 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{graphicx}
+\usepackage{babel}
+\begin{document}
+
+\title{Propuesta de tesis Magister TI}
+
+
+\author{Alvaro Jose Peralta}
+
+\maketitle
+
+\section{Introducción}
+
+En el contexto empresarial la constante que más resalta es la variabilidad
+de los procesos de negocio que es ocasionada por la dinámica de crecimiento
+constante y mejora continua a la que las organizaciones están sometidas
+en un ambiente de alta competitividad {[}4{]}. Realidades del negocio
+como fusiones corporativas, cadenas de valor distribuidas, nuevas
+tecnologías, nuevas formas de negocio, clientes formados tecnológicamente.
+Ha ocasionado requerimientos muy exigentes al área de TI que día a
+día se ve afrontada a brindar soluciones innovadoras, en menor tiempo
+con menor costo de inversión. 
+
+Este hecho fundamental ha generado toda una industria que durante
+el principio de este siglo ha florecido por presentar una solución
+profesional dentro de esta dinámica heterogenia de operaciones altamente
+interconectadas, de requerimientos cambiantes con una alta necesidad
+de reutilización de factores críticos de éxito.
+
+Esta solución propuesta por la industria es conocida actualmente como
+\textquotedblleft{}Arquitecturas Orientadas a Servicio\textquotedblright{}
+o SOA por sus siglas en inglés, que 
+
+principal respuesta para lograr coordinar la dinámica en la interacción
+de los diferentes actores que son involucrados en la cadena de valor
+de las organizaciones, su principal objetivo es la reutilización de
+\textquotedblleft{}servicios\textquotedblright{} que ya funcionan
+en la organización disminuyendo la complejidad en la integración de
+procesos.
+
+Esta coordinación es desarrollada básicamente por dos conceptos elaborados
+en el contexto SOA denominados orquestación y coreografía que cumplen
+un papel análogo a su definición natural permitiendo que los actores
+logren completar cierta sinergia gracias a la elaboración de flujos
+de trabajo desarrollado por el esfuerzo conjunto entre el área de
+TI y de negocio que en adelante llamaremos procesos de negocio web.
+
+Estos procesos de negocio no son muy diferentes de los denominados
+workflows o flujos de trabajo, representan más bien una evolución
+tecnología. Mientras que los workflows invocan tareas, los procesos
+web invocan servicios web {[}1{]} (Cardoso 2005).
+
+Al parecer la facilidad con que estos procesos de negocio son desarrollados
+y mantenidos gracias al uso de lenguajes estandarizados por la W3C
+como por ejemplo: (WS-BPEL 2005).Que es implementado en soluciones
+SOA lo que ha generado un gran adelanto tecnológico en la relación
+Negocio-TI.
+
+Sin embargo la realidad de \textquotedblleft{}adaptación al cambio
+constante\textquotedblright{} no ha cambiado en su esencia misma,
+ocasionando que cada vez más los procesos de negocio sigan evolucionando
+y ampliando su complejidad tanto en requerimientos funcionales como
+no funcionales, por lo que aun teniendo una arquitectura tan robusta
+como lo es la propuesta en el contexto SOA los atributos de calidad
+del software que aún se aplican en lenguajes como BPEL siguen siendo
+una preocupación tanto para el área de TI como para el negocio en
+sí mismo. 
+
+
+\section{Problema a resolver / Oportunidad de Mejora}
+
+\emph{Contexto:} Análisis de procesos de negocio orientados a la web
+en situaciones de alta complejidad con requerimientos funcionales
+cambiantes en un entorno de arquitecturas orientadas a servicio.
+
+La oportunidad de mejora se centra en lo que hemos llamado \textquotedblleft{}complejidad
+de procesos de negocio web\textquotedblright{} debido a que esta se
+produce en el proceso de desarrollo no está exenta de los mismos problemas
+al construir un software tradicional, por ejemplo: inyección de defectos,
+excepciones inesperadas, poca comprensión del proceso. Lo que a este
+nivel de abstracción puede ser un costo tremendo tanto el proceso
+de desarrollo como en el impacto en el negocio. 
+
+Tomemos como ejemplo el caso de estudio que propone la suite de Oracle
+SOA Suite, de nombre Fusion Order Demo que simula el comportamiento
+de una empresa internacional de retail como Fallabela o París conocidas
+en el contexto chileno.
+
+El servicio que nos interesa observar del ejemplo puntualmente es
+la ejecución del proceso de orden de compra, siendo este el flujo
+de proceso que se necesita para llevar a cabo una compra de un grupo
+de ítems previamente seleccionados de un carrito de compras hasta
+su envió y notificación al cliente de que su orden le ha sido enviada
+por un proveedor de transporte físico.
+
+Para lograr este objetivo el proceso de negocio tiene que interactuar
+con múltiples actores dentro de la cadena de valor además de ejecutar
+ciertas instrucciones de negocio para determinar para producir el
+flujo esperado. \includegraphics{img/FusionOrderDemoFlow}
+\begin{thebibliography}{Fusion Order Demo Tutorial, http://docs.oracle.com/cd/E12839\_{}01/integration.1111/e10275.pdf}
+\bibitem[Fusion Order Demo Tutorial, http://docs.oracle.com/cd/E12839\_{}01/integration.1111/e10275.pdf]{FOD2010}\end{thebibliography}
+
+\end{document}
