@@ -5,6 +5,49 @@
 \usepackage[latin9]{inputenc}
 \usepackage{graphicx}
 \usepackage{babel}
+
+% packages
+\usepackage{xspace}
+\usepackage{ifthen}
+\usepackage{amsbsy}
+\usepackage{amssymb}
+\usepackage{balance}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{needspace}
+\usepackage{microtype}
+\usepackage{bold-extra}
+\usepackage{subfigure}
+\usepackage{wrapfig}
+\usepackage{enumerate}
+
+% proof-reading
+\usepackage{xcolor}
+\usepackage[normalem]{ulem}
+\newcommand{\ra}{$\rightarrow$}
+\newcommand{\ugh}[1]{\textcolor{red}{\uwave{#1}}} % please rephrase
+\newcommand{\ins}[1]{\textcolor{blue}{\uline{#1}}} % please insert
+\newcommand{\del}[1]{\textcolor{red}{\sout{#1}}} % please delete
+\newcommand{\chg}[2]{\textcolor{red}{\sout{#1}}{\ra}\textcolor{blue}{\uline{#2}}} % please change
+\newcommand{\chk}[1]{\textcolor{green}{#1}} % changed, please check
+
+% comments \nb{label}{color}{text}
+\newboolean{showcomments}
+\setboolean{showcomments}{true}
+\ifthenelse{\boolean{showcomments}}
+        {\newcommand{\nb}[3]{
+                {\colorbox{#2}{\bfseries\sffamily\scriptsize\textcolor{white}{#1}}}
+                {\textcolor{#2}{\sf\small$\blacktriangleright$\textit{#3}$\blacktriangleleft$}}}
+         \newcommand{\version}{\emph{\scriptsize$-$Id$-$}}}
+        {\newcommand{\nb}[2]{}
+         \newcommand{\version}{}}
+\newcommand{\rev}[2]{\nb{Reviewer #1}{red}{#2}}
+\newcommand{\ab}[1]{\nb{Alexandre}{blue}{#1}}
+\newcommand{\ai}[1]{\nb{Alejandro}{orange}{#1}}
+\newcommand{\on}[1]{\nb{Oscar}{olive}{#1}}
+
+
 \addto\shorthandsspanish{\spanishdeactivate{~<>}}
 
 \begin{document}
@@ -13,7 +56,7 @@
 \title{Propuesta de tesis Magíster TI}
 
 
-\author{Universiad de chile , DCC}
+\author{Universidad de chile, DCC}
 
 
 \author{Alvaro Jose Peralta Ocampo}
@@ -24,6 +67,8 @@
 \maketitle
 
 \section{Introducción}
+
+\ab{La introducción tiene que ser estructurada como: contexto, problema, porque el problem es importante, tu solución, y la validación de tu solution}
 
 En el contexto empresarial la constante que más resalta es la variabilidad
 de los procesos de negocio que es ocasionada por la dinámica de crecimiento
@@ -43,7 +88,7 @@ de reutilización de factores críticos de éxito.
 
 Esta solución propuesta por la industria es conocida actualmente como
 \textquotedblleft{}Arquitecturas Orientadas a Servicio\textquotedblright{}
-o SOA por sus siglas en inglés, que 
+o SOA por sus siglas en inglés, que  \ab{here??}
 
 principal respuesta para lograr coordinar la dinámica en la interacción
 de los diferentes actores que son involucrados en la cadena de valor
@@ -117,7 +162,7 @@ de TI tenga con el área de negocio para su nuevo proyecto SOA. Nuestro
 equipo se ve obligado a definir una propuesta de alcance, partiendo
 de su experiencia y de métricas de procesos similares, pero: 
 
-\textbf{\emph{Problema 1 }}
+\textbf{\emph{Problema 1}\ab{Da un pequeño titulo}}
 
 Al no tener métricas recolectadas de procesos anteriores o en su defecto
 no poder dimensionar métricas de procesos ejemplo, No se puede estar
@@ -138,7 +183,7 @@ proceso de negocio que en términos de \emph{calidad} dependerá de
 cuan avanzados estemos como organización en los \emph{niveles de madures
 SOA\cite{IBMSOAG2006}} , por lo que en niveles bajos:
 
-\textbf{\emph{Problema 2}} 
+\textbf{\emph{Problema 2}\ab{Da un pequeño titulo}} 
 
 Al no tener definido un marco de trabajo con el que podamos valorar
 características inherentes al software BPEL (Proceso de negocio),
@@ -153,7 +198,7 @@ SOA al equipo de desarrollo, que para este caso contextual finalizan
 el proceso, entregando un proceso probado finalizando así su compromiso
 con el proyecto.
 
-\textbf{\emph{Problema 3 }}
+\textbf{\emph{Problema 3}\ab{Da un pequeño titulo}}
 
 Para el arquitecto de TI junto con el área de QA los cuales, tiene
 la responsabilidad de recibir dichas pruebas. Deben valerse de herramientas
@@ -181,7 +226,7 @@ la revisión del proceso en producción como en la etapa de creación
 del proceso. lo cual agrega un nuevo problema dentro de los actuales
 análisis de procesos con los que cuentan las herramientas y es que:
 
-\textbf{\emph{Problema 4}}
+\textbf{\emph{Problema 4}\ab{Da un pequeño titulo}}
 
 Muchos de los indicadores de análisis dinámico, es decir métricas
 que se toman mientras que el proceso es ejecutado, solo se alcanzan
@@ -207,7 +252,7 @@ y controlado por los procesos.
 \begin{figure}
 \centering{}\caption{\selectlanguage{english}%
 \label{fig:Preocupaciones-del-Govierno}\foreignlanguage{spanish}{Preocupaciones
-del Gobierno SOA}\cite{Weir2013}\selectlanguage{spanish}%
+del Gobierno SOA\ab{Muy chiquitito}}\cite{Weir2013}\selectlanguage{spanish}%
 }
 \includegraphics[scale=0.5]{img/SOAGovernanceConcerns}
 \end{figure}
