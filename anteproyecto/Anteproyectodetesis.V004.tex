@@ -5,6 +5,37 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 
+% packages
+\usepackage{xspace}
+\usepackage{ifthen}
+\usepackage{amsbsy}
+\usepackage{amssymb}
+\usepackage{balance}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{needspace}
+\usepackage{microtype}
+\usepackage{bold-extra}
+\usepackage{subfigure}
+\usepackage{wrapfig}
+\usepackage{enumerate}
+
+% references
+\usepackage[colorlinks]{hyperref}
+\usepackage[all]{hypcap}
+\setcounter{tocdepth}{2}
+\hypersetup{
+        colorlinks=true,
+        urlcolor=black,
+        linkcolor=black,
+        citecolor=black,
+        plainpages=false,
+        bookmarksopen=true,
+        pdfauthor={Alvaro Jose Peralta Ocampo},
+        pdftitle={Titulo}}
+
+
 \makeatletter
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
 \usepackage{babel}
@@ -22,11 +53,42 @@
 \usepackage{babel}
 \addto\shorthandsspanish{\spanishdeactivate{~<>}}
 
+
+
+
+
+% proof-reading
+\usepackage{xcolor}
+\usepackage[normalem]{ulem}
+\newcommand{\ra}{$\rightarrow$}
+\newcommand{\ugh}[1]{\textcolor{red}{\uwave{#1}}} % please rephrase
+\newcommand{\ins}[1]{\textcolor{blue}{\uline{#1}}} % please insert
+\newcommand{\del}[1]{\textcolor{red}{\sout{#1}}} % please delete
+\newcommand{\chg}[2]{\textcolor{red}{\sout{#1}}{\ra}\textcolor{blue}{\uline{#2}}} % please change
+\newcommand{\chk}[1]{\textcolor{green}{#1}} % changed, please check
+
+% comments \nb{label}{color}{text}
+\newboolean{showcomments}
+\setboolean{showcomments}{true}
+\ifthenelse{\boolean{showcomments}}
+        {\newcommand{\nb}[3]{
+                {\colorbox{#2}{\bfseries\sffamily\scriptsize\textcolor{white}{#1}}}
+                {\textcolor{#2}{\sf\small$\blacktriangleright$\textit{#3}$\blacktriangleleft$}}}
+         \newcommand{\version}{\emph{\scriptsize$-$Id$-$}}}
+        {\newcommand{\nb}[2]{}
+         \newcommand{\version}{}}
+\newcommand{\rev}[2]{\nb{Reviewer #1}{red}{#2}}
+\newcommand{\ab}[1]{\nb{Alexandre}{blue}{#1}}
+\newcommand{\ai}[1]{\nb{Alejandro}{orange}{#1}}
+\newcommand{\on}[1]{\nb{Oscar}{olive}{#1}}
+
+
+
 \begin{document}
 
 
 
-\title{Propuesta de tesis Magíster TI}
+\title{Propuesta de tesis Magíster TI \ab{Give a better title. Cual es el titulo de tu trabajo?} }
 
 
 \author{Universidad de chile, DCC}
@@ -44,7 +106,7 @@
 En el contexto empresarial la constante que más resalta es la variabilidad
 de los procesos de negocio que es ocasionada por la dinámica de crecimiento
 constante y mejora continua a la que las organizaciones están sometidas
-en un ambiente de alta competitividad . Realidades del negocio como
+en un ambiente de alta competitividad. Realidades del negocio como
 fusiones corporativas, cadenas de valor distribuidas, nuevas tecnologías,
 nuevas formas de negocio, clientes formados tecnológicamente. Ha ocasionado
 requerimientos muy exigentes al área de TI que día a día se ve afrontada
@@ -79,7 +141,7 @@ web invocan servicios web \cite{Cardoso2008}.
 
 Al parecer la facilidad con que estos procesos de negocio son desarrollados
 y mantenidos gracias al uso de lenguajes estandarizados por la W3C
-como por ejemplo: (WS-BPEL 2005).Que es implementado en soluciones
+como por ejemplo: (WS-BPEL 2005). Que es implementado en soluciones
 SOA lo que ha generado un gran adelanto tecnológico en la relación
 Negocio-TI.
 
@@ -114,7 +176,7 @@ que se han estado realizando a la fecha de entrega de esta propuesta.
 en situaciones de alta complejidad con requerimientos funcionales
 cambiantes en un entorno de arquitecturas orientadas a servicio.
 
-La oportunidad de mejora se centra en lo que hemos llamado ``complejidad
+\ab{Larga farsa. hay que usar puntos} La oportunidad de mejora se centra en lo que hemos llamado ``complejidad
 de procesos de negocio web” debido a que esta se produce en el proceso
 de desarrollo no está exenta de los mismos problemas al construir
 un software tradicional, por ejemplo: inyección de defectos, excepciones
@@ -144,6 +206,7 @@ de TI tenga con el área de negocio para su nuevo proyecto SOA. Nuestro
 equipo se ve obligado a definir una propuesta de alcance, partiendo
 de su experiencia y de métricas de procesos similares, pero:
 
+\vspace{0.5cm}
 \textbf{\emph{Problema 1 - Ausencia de métricas como complejidad,
 calidad, portabilidad entre otras}}
 
@@ -164,8 +227,9 @@ inadecuadas.
 El caso inicial de la primera iteración nos llevara a construir un
 proceso de negocio que en términos de \emph{calidad} dependerá de
 cuan avanzados estemos como organización en los \emph{niveles de madures
-SOA\cite{IBMSOAG2006}} , por lo que en niveles bajos:
+SOA\cite{IBMSOAG2006}} , por lo que en niveles bajos: \ab{Porque ``:''? La frasa no parece ser terminada}
 
+\vspace{0.5cm}
 \textbf{\emph{Problema 2 - Dificultad en la estimación de esfuerzo}}
 
 Al no tener definido un marco de trabajo con el que podamos valorar
@@ -181,6 +245,7 @@ SOA al equipo de desarrollo, que para este caso contextual finalizan
 el proceso, entregando un proceso probado finalizando así su compromiso
 con el proyecto.
 
+\vspace{0.5cm}
 \textbf{\emph{Problema 3 - Actividades de validación de pruebas insuficientes}}
 
 Para el arquitecto de TI junto con el área de QA los cuales, tiene
@@ -197,7 +262,7 @@ Continuando con la característica mencionada en la introducción de
 esta propuesta de tesis que hace referencia a la constante ``cambio”
 en el negocio, los estudios indican que el 38\% de las soluciones
 con procesos de negocio se les aplicara un proceso de rediseño en
-toda la organización (Delphi Group, 2002) \cite{Cardoso2008}, por
+toda la organización (Delphi Group, 2002)\ab{Hay que usar solamente uno estillo de referencia} \cite{Cardoso2008}, por
 lo que una perspectiva cíclica de constantes proyectos de desarrollo
 es aplicable constantemente en este ambiente de servicios y procesos.
 Esto sumado a la complejidad en la gestión de requisitos, principalmente
@@ -209,6 +274,7 @@ la revisión del proceso en producción como en la etapa de creación
 del proceso. lo cual agrega un nuevo problema dentro de los actuales
 análisis de procesos con los que cuentan las herramientas y es que:
 
+\vspace{0.5cm}
 \textbf{\emph{Problema 4 - Indicadores estáticos y dinámicos insuficientes
 para detectar anormalidades}}
 
@@ -251,8 +317,10 @@ para que estas preocupaciones sean mitigadas es muy alta, similar
 a la inversión que se necesita en un desarrollo de software tradicional
 para realizar análisis,
 
+\vspace{0.5cm}
 \textbf{Problema 5 - Realizar valoración de procesos BPEL requiere
 un enorme esfuerzo}
+\ab{Este titulo no tiene el mismo formato que los otros t�tulos de problemas}
 
 por tanto una valoración de software ( procesos BPEL incluidos) es
 costosa y necesita de re-ingeniería \cite{Girb2011}, Además requiere
@@ -266,6 +334,7 @@ que continua desarrollándose, que necesita de herramientas, métricas
 y metodologías que aporten el desarrollo de mejores procesos, dentro
 de las cualidades de software requeridas por el negocio.
 
+\vspace{0.5cm}
 \textbf{Problema 6 - Disciplina de valoración no es comunmente adoptada
 en el proceso de desarrollo de procesos BPEL}
 
@@ -276,7 +345,7 @@ por lo que el esfuerzo en tiempo, costo y capital humano es muy significativo.
 Se ha demostrado en otros contextos del desarrollo de software que
 contar con herramientas que permitan visualizar diferentes perspectivas
 de arquitectura son una excelente manera de integrar la valoración
-del producto al ciclo de vida del desarrollo, caso de ejemplo es www.moosetechnology.com.
+del producto al ciclo de vida del desarrollo, caso de ejemplo es \url{www.moosetechnology.com}.
 Herramienta que tiene como propósito incrementar las opciones y la
 productividad de las valoraciones de software utilizando múltiples
 herramientas que permiten analizar las diferentes perspectivas de
@@ -383,7 +452,7 @@ por una herramienta de gestión tipo scrum es la que mas se ajusta
 a este modelo.
 
 \textbf{Plan de trabajo General - Macroactividades}
-
+\ab{Quizas agregar una carta gantt para ver los progresos y tiempo de cada cosa?}
 \textbf{Seminario de tesis 1} 
 \begin{itemize}
 \item Estudiar y dominar las bases del desarrollo bajo la plataforma moosetechnology. 
