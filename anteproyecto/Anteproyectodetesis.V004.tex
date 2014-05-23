@@ -1,72 +1,56 @@
+%% LyX 2.0.7 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
 \documentclass[spanish]{article}
+\usepackage{lmodern}
+\renewcommand{\ttdefault}{lmodern}
 \usepackage[T1]{fontenc}
-\usepackage[utf8]{luainputenc}
+\usepackage[latin9]{inputenc}
+\setcounter{tocdepth}{2}
+\usepackage{color}
+\usepackage{babel}
+\addto\shorthandsspanish{\spanishdeactivate{~<>}}
+
+\usepackage{url}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{graphicx}
-
-% packages
-\usepackage{xspace}
-\usepackage{ifthen}
-\usepackage{amsbsy}
-\usepackage{amssymb}
-\usepackage{balance}
-\usepackage{booktabs}
-\usepackage{graphicx}
-\usepackage{multirow}
-\usepackage{needspace}
-\usepackage{microtype}
-\usepackage{bold-extra}
-\usepackage{subfigure}
-\usepackage{wrapfig}
-\usepackage{enumerate}
-
-% references
-\usepackage[colorlinks]{hyperref}
-\usepackage[all]{hypcap}
-\setcounter{tocdepth}{2}
-\hypersetup{
-        colorlinks=true,
-        urlcolor=black,
-        linkcolor=black,
-        citecolor=black,
-        plainpages=false,
-        bookmarksopen=true,
-        pdfauthor={Alvaro Jose Peralta Ocampo},
-        pdftitle={Titulo}}
-
+\usepackage[unicode=true,
+ bookmarks=true,bookmarksnumbered=false,bookmarksopen=true,bookmarksopenlevel=1,
+ breaklinks=false,pdfborder={0 0 1},backref=section,colorlinks=true]
+ {hyperref}
+\hypersetup{pdftitle={Titulo},
+ pdfauthor={Alvaro Jose Peralta Ocampo},
+ colorlinks,urlcolor=black,linkcolor=black,citecolor=black,plainpages=false}
+\usepackage{breakurl}
 
 \makeatletter
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
-\usepackage{babel}
 
 
-
-
-\usepackage{babel}
+\usepackage{color}\usepackage{babel}
 \addto\shorthandsspanish{\spanishdeactivate{~<>}}
 
+\usepackage{url}
+\usepackage{breakurl}
 
 
-\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{babel}
+% packages
+\usepackage{xspace}\usepackage{ifthen}\usepackage{amsbsy}\usepackage{balance}\usepackage{booktabs}\usepackage{multirow}\usepackage{needspace}\usepackage{microtype}\usepackage{bold-extra}\usepackage{subfigure}\usepackage{enumerate}
 
+% references
+\usepackage[all]{hypcap}\usepackage{babel}
+\addto\shorthandsspanish{\spanishdeactivate{~<>}}
 \usepackage{babel}
 \addto\shorthandsspanish{\spanishdeactivate{~<>}}
-
-
-
-
-
 % proof-reading
-\usepackage{xcolor}
-\usepackage[normalem]{ulem}
-\newcommand{\ra}{$\rightarrow$}
+\usepackage{xcolor}\usepackage{ulem}\newcommand{\ra}{$\rightarrow$}
 \newcommand{\ugh}[1]{\textcolor{red}{\uwave{#1}}} % please rephrase
 \newcommand{\ins}[1]{\textcolor{blue}{\uline{#1}}} % please insert
 \newcommand{\del}[1]{\textcolor{red}{\sout{#1}}} % please delete
 \newcommand{\chg}[2]{\textcolor{red}{\sout{#1}}{\ra}\textcolor{blue}{\uline{#2}}} % please change
 \newcommand{\chk}[1]{\textcolor{green}{#1}} % changed, please check
-
 % comments \nb{label}{color}{text}
 \newboolean{showcomments}
 \setboolean{showcomments}{true}
@@ -84,11 +68,16 @@
 
 
 
+
+\makeatother
+
 \begin{document}
 
+\title{Propuesta de tesis MagÌster TI }
 
 
-\title{Propuesta de tesis Mag√≠ster TI \ab{Give a better title. Cual es el titulo de tu trabajo?} }
+\title{Herramienta de evaluaciÛn de valoraciÛn de la complejidad en procesos
+de negocio desarrollados en BPEL}
 
 
 \author{Universidad de chile, DCC}
@@ -101,385 +90,366 @@
 
 \maketitle
 
-\section{Introducci√≥n}
+\section{JustificaciÛn de la propuesta}
 
-En el contexto empresarial la constante que m√°s resalta es la variabilidad
-de los procesos de negocio que es ocasionada por la din√°mica de crecimiento
-constante y mejora continua a la que las organizaciones est√°n sometidas
+El propÛsito de esta tesis se centra en la mejora de la calidad del
+software orientada a procesos desarrollados en BPEL bajo el contexto
+SOA, pero dado el nivel estratÈgico que tiene dicha arquitectura y
+su alto impacto que tiene esta en la relaciÛn del negocio con el ·rea
+de TI las actividades y herramientas que sean propuesta en este trabajo
+de tesis involucran tambiÈn propuestas en el proceso de desarrollo
+como parte integral de producir una herramienta de valoraciÛn de cÛdigo
+BPEL.
+
+El constante crecimiento de esta tecnologÌa, principalmente ahora
+en donde la din·mica de la industria ha permitido que la arquitectura
+SOA pueda ser implementada con menos costos operativos, ha generado
+una gran demanda por mejores estrategias para una correcta gestiÛn
+del proceso como del desarrollo tanto en la gran industria como en
+la mediana industria.
+
+Ahora es normal ver como empresas pueden usar infraestructuras en
+la nube para usar esta tecnologÌa con costos muy competitivos y de
+f·cil acceso, lo cual ha generado una gran expectativa en tÈrminos
+de integraciÛn con otros negocios y nuevas formas de hacer servicios.
+
+En la medida que se agregue complejidad a estos procesos, las actividades
+de evaluaciÛn y mejora de la calidad se hacen mas evidente, por lo
+que aportar con una herramienta que ayude a los ingenieros a desarrollar
+mejores procesos de negocio generar un enorme valor agregado, principalmente
+porque busca definir una infraestructura con en la que se puede seguir
+avanzando en la investigaciÛn y en el desarrollo de nuevas formas
+de valoraciÛn de procesos negocio en la web.
+
+Para poder cumplir con el objetivo principal es necesario utilizar
+todas las disciplinas asociadas a la ingenierÌa del software, adicionando
+un especial esfuerzo a la disciplina de an·lisis y diseÒo en tÈrminos
+de arquitectura dado que el principal objetivo es permitir a los ingenieros
+validar si sus diseÒos cumplen con las expectativas de los requisito
+del negocio.
+
+El principal desafiÛ de este proyecto se centra en construir herramientas
+que \emph{visualmente permitan a el equipo de desarrollo tomar mejores
+decisiones con respecto al diseÒo de sus procesos de negocio}, lo
+cual conlleva realizar un arduo trabajo de investigaciÛn en el estado
+del arte en indicadores, complejidad del proceso,evaluaciÛn,ciclos
+de vida y de maduraciÛn en procesos BPEL como en implantaciÛn del
+paradigma SOA.
+
+
+\section{IntroducciÛn}
+
+En el contexto empresarial la constante que m·s resalta es la variabilidad
+de los procesos de negocio que es ocasionada por la din·mica de crecimiento
+constante y mejora continua a la que las organizaciones est·n sometidas
 en un ambiente de alta competitividad. Realidades del negocio como
-fusiones corporativas, cadenas de valor distribuidas, nuevas tecnolog√≠as,
-nuevas formas de negocio, clientes formados tecnol√≥gicamente. Ha ocasionado
-requerimientos muy exigentes al √°rea de TI que d√≠a a d√≠a se ve afrontada
+fusiones corporativas, cadenas de valor distribuidas, nuevas tecnologÌas,
+nuevas formas de negocio, clientes formados tecnolÛgicamente. Ha ocasionado
+requerimientos muy exigentes al ·rea de TI que dÌa a dÌa se ve afrontada
 a brindar soluciones innovadoras, en menor tiempo con menor costo
-de inversi√≥n \cite{libroInteroperabilidadDCC2009}.
+de inversiÛn \cite{libroInteroperabilidadDCC2009}.
 
 Este hecho fundamental ha generado toda una industria que durante
-el principio de este siglo ha florecido por presentar una soluci√≥n
-profesional dentro de esta din√°mica heterog√©nea de operaciones altamente
+el principio de este siglo ha florecido por presentar una soluciÛn
+profesional dentro de esta din·mica heterogÈnea de operaciones altamente
 interconectadas, de requerimientos cambiantes con una alta necesidad
-de reutilizaci√≥n de factores cr√≠ticos de √©xito.
+de reutilizaciÛn de factores crÌticos de Èxito.
 
-Esta soluci√≥n propuesta por la industria es conocida actualmente como
-``Arquitecturas Orientadas a Servicio‚Äù, soluci√≥n que viene siendo
-la principal respuesta para lograr coordinar la din√°mica en la interacci√≥n
-de los diferentes actores que son involucrados en la cadena de valor
-de las organizaciones. Su principal objetivo es la reutilizaci√≥n de
-``servicios‚Äù que ya funcionan en la organizaci√≥n disminuyendo as√≠
-la complejidad en la integraci√≥n de procesos.
+Esta soluciÛn propuesta por la industria es conocida actualmente como
+``Arquitecturas Orientadas a Servicio\textquotedblright{}, soluciÛn
+que viene siendo la principal respuesta para lograr coordinar la din·mica
+en la interacciÛn de los diferentes actores que son involucrados en
+la cadena de valor de las organizaciones. Su principal objetivo es
+la reutilizaciÛn de ``servicios\textquotedblright{} que ya funcionan
+en la organizaciÛn disminuyendo asÌ la complejidad en la integraciÛn
+de procesos.
 
-Esta coordinaci√≥n es desarrollada b√°sicamente por dos conceptos elaborados
-en el contexto SOA denominados orquestaci√≥n y coreograf√≠a que cumplen
-un papel an√°logo a su definici√≥n natural permitiendo que los actores
-logren completar cierta sinergia gracias a la elaboraci√≥n de flujos
-de trabajo desarrollado por el esfuerzo conjunto entre el √°rea de
+Esta coordinaciÛn es desarrollada b·sicamente por dos conceptos elaborados
+en el contexto SOA denominados orquestaciÛn y coreografÌa que cumplen
+un papel an·logo a su definiciÛn natural permitiendo que los actores
+logren completar cierta sinergia gracias a la elaboraciÛn de flujos
+de trabajo desarrollado por el esfuerzo conjunto entre el ·rea de
 TI y de negocio que en adelante llamaremos procesos de negocio web.
 
 Estos procesos de negocio no son muy diferentes de los denominados
-workflows o flujos de trabajo, representan m√°s bien una evoluci√≥n
-tecnolog√≠a. Mientras que los workflows invocan tareas, los procesos
+workflows o flujos de trabajo, representan m·s bien una evoluciÛn
+tecnologÌa. Mientras que los workflows invocan tareas, los procesos
 web invocan servicios web \cite{Cardoso2008}.
 
 Al parecer la facilidad con que estos procesos de negocio son desarrollados
 y mantenidos gracias al uso de lenguajes estandarizados por la W3C
 como por ejemplo: (WS-BPEL 2005). Que es implementado en soluciones
-SOA lo que ha generado un gran adelanto tecnol√≥gico en la relaci√≥n
-Negocio-TI.
-
-Sin embargo la realidad de ``adaptaci√≥n al cambio constante‚Äù no ha
-cambiado en su esencia misma, ocasionando que cada vez m√°s los procesos
-de negocio sigan evolucionando y ampliando su complejidad tanto en
-requerimientos funcionales como no funcionales, por lo que aun teniendo
-una arquitectura tan robusta como lo es la propuesta en el contexto
-SOA los atributos de calidad del software que a√∫n se aplican en lenguajes
-como BPEL siguen siendo una preocupaci√≥n tanto para el √°rea de TI
-como para el negocio en s√≠ mismo.
+SOA lo que ha generado un gran adelanto tecnolÛgico en la relaciÛn
+Negocio-TI. Sin embargo la realidad de un sistema en cambio constante
+y por ende procesos y software siendo editados no ha cambiado en su
+esencia misma, ocasionando que cada vez m·s los procesos de negocio
+sigan evolucionando y ampliando su complejidad tanto en requerimientos
+funcionales como no funcionales, por lo que aun teniendo una arquitectura
+tan robusta como lo es la propuesta en el contexto SOA los atributos
+de calidad del software que a˙n se aplican en lenguajes como BPEL
+siguen siendo una preocupaciÛn tanto para el ·rea de TI como para
+el negocio en sÌ mismo.
 
 Este propuesta de tesis relata en su punto numero 2 porque el desarrollo
 de procesos de negocio es complejo y lleno de preocupaciones asociadas
-a la complejidad y calidad en la construcci√≥n de dichos procesos,
-definiendo as√≠ un conjunto de problemas que son los que mas sobresalen
-durante un ciclo de vida normal de construcci√≥n.
+a la complejidad y calidad en la construcciÛn de dichos procesos,
+definiendo asÌ un conjunto de problemas que son los que mas sobresalen
+durante un ciclo de vida normal de construcciÛn.
 
 Una ves argumentado y listado el grupo de problemas se describe de
 manera muy resumida en el punto numero 3 las distintas disciplinas
-de ingenier√≠a y gesti√≥n que son necesarias para abordar el desafi√≥
-de construir una herramienta para la valoraci√≥n de procesos de negocio
-en el lenguaje ( BPEL ) finalizando as√≠ con el punto 4 y 5 con una
-declaraci√≥n formal de lo que se pretende entregar al finalizar el
+de ingenierÌa y gestiÛn que son necesarias para abordar el desafiÛ
+de construir una herramienta para la valoraciÛn de procesos de negocio
+en el lenguaje ( BPEL ) finalizando asÌ con el punto 4 y 5 con una
+declaraciÛn formal de lo que se pretende entregar al finalizar el
 proyecto de tesis junto con un breve resumen de las macro actividades
-que se han estado realizando a la fecha de entrega de esta propuesta. 
+que se han estado realizando a la fecha de entrega de esta propuesta.
 
 
 \section{Problema a resolver / Oportunidad de Mejora}
 
-\emph{Contexto:} An√°lisis de procesos de negocio orientados a la web
-en situaciones de alta complejidad con requerimientos funcionales
-cambiantes en un entorno de arquitecturas orientadas a servicio.
+\emph{Contexto:} \emph{An·lisis de procesos de negocio orientados
+a la web, en situaciones de alta complejidad, con requerimientos funcionales
+cambiantes, en un entorno de arquitecturas orientadas a servicio.}
 
-\ab{Larga farsa. hay que usar puntos} La oportunidad de mejora se centra en lo que hemos llamado ``complejidad
-de procesos de negocio web‚Äù debido a que esta se produce en el proceso
-de desarrollo no est√° exenta de los mismos problemas al construir
-un software tradicional, por ejemplo: inyecci√≥n de defectos, excepciones
-inesperadas, poca comprensi√≥n del proceso. Lo que a este nivel de
-abstracci√≥n puede ser un costo tremendo tanto el proceso de desarrollo
-como en el impacto en el negocio.
+La oportunidad de mejora se centra en lo que hemos llamado ``complejidad
+de procesos de negocio web\textquotedblright{} debido a que esta se
+produce en el proceso de desarrollo no est· exenta de los mismos problemas
+al construir un software tradicional, por ejemplo: inyecciÛn de defectos,
+excepciones inesperadas, poca comprensiÛn del proceso. Lo que a este
+nivel de abstracciÛn puede ser un costo tremendo tanto el proceso
+de desarrollo como en el impacto en el negocio.
 
 Tomemos como ejemplo el caso de estudio que propone la suite de Oracle
 SOA Suite, de nombre Fusion Order Demo {[}2{]} que simula el comportamiento
-de una empresa internacional de retail como Fallabela o Par√≠s conocidas
+de una empresa internacional de retail como Fallabela o ParÌs conocidas
 en el contexto chileno.
 
 El servicio que nos interesa observar del ejemplo puntualmente es
-la ejecuci√≥n del proceso de orden de compra, siendo este el flujo
+la ejecuciÛn del proceso de orden de compra, siendo este el flujo
 de proceso que se necesita para llevar a cabo una compra de un grupo
-de √≠tems previamente seleccionados de un carrito de compras hasta
-su envi√≥ y notificaci√≥n al cliente de que su orden le ha sido enviada
-por un proveedor de transporte f√≠sico.
+de Ìtems previamente seleccionados de un carrito de compras hasta
+su enviÛ y notificaciÛn al cliente de que su orden le ha sido enviada
+por un proveedor de transporte fÌsico.
 
 Para lograr este objetivo el proceso de negocio tiene que interactuar
-con m√∫ltiples actores dentro de la cadena de valor adem√°s de ejecutar
-ciertas instrucciones de negocio para determinar para producir el
-flujo esperado.
+con m˙ltiples actores dentro de una cadena y sistema de valor, adem·s
+de ejecutar ciertas instrucciones de negocio para producir el resultado
+esperado.
 
-Suponiendo que esta introducci√≥n sea una reuni√≥n inicial que el √°rea
-de TI tenga con el √°rea de negocio para su nuevo proyecto SOA. Nuestro
-equipo se ve obligado a definir una propuesta de alcance, partiendo
-de su experiencia y de m√©tricas de procesos similares, pero:
+Suponiendo que esta introducciÛn sea entregada en una reuniÛn inicial
+junto con una diagrama en el que se describe el proceso en general
+junto a los principales actores a interconectar. que el ·rea de TI
+tenga con el ·rea de negocio para su nuevo proyecto SOA. Nuestro equipo
+se ve obligado a definir una propuesta de alcance, partiendo de su
+experiencia y de mÈtricas de procesos similares,
 
 \vspace{0.5cm}
-\textbf{\emph{Problema 1 - Ausencia de m√©tricas como complejidad,
-calidad, portabilidad entre otras}}
+ \textbf{\emph{Problema 1 - Ausencia de mÈtricas capturadas en los
+procesos como complejidad, calidad, portabilidad entre otras}}
 
-Al no tener m√©tricas recolectadas de procesos anteriores o en su defecto
-no poder dimensionar m√©tricas de procesos ejemplo, No se puede estar
-seguro del tama√±o y/o complejidad de lo que se nos est√° pidiendo,
+Al no tener mÈtricas recolectadas de procesos anteriores o en su defecto
+no poder dimensionar mÈtricas de procesos ejemplo, No se puede estar
+seguro del tamaÒo y/o complejidad de lo que se nos est· pidiendo,
 este ha sido un problema recurrente y estudiado en varias publicaciones
 como \cite{Cardoso2008,Cardoso2006,Budnik2011}, los cuales proponen
 distintas formas de medir procesos BPEL.
 
 Debido al primer problema encontrado, la propuesta de alcance se construye
-desde la labor heur√≠stica del arquitecto l√≠der, que puede prometer
+desde la labor heurÌstica del arquitecto lÌder, que puede prometer
 cualidades del software que no lo comprometan. Por ejemplo: Un grado
-de mantenibilidad del 80\% y una complejidad MEDIA de la l√≥gica del
+de mantenibilidad del 80\% y una complejidad MEDIA de la lÛgica del
 proceso. Medidas que para la promesa de la arquitectura SOA son totalmente
 inadecuadas.
 
-El caso inicial de la primera iteraci√≥n nos llevara a construir un
-proceso de negocio que en t√©rminos de \emph{calidad} depender√° de
-cuan avanzados estemos como organizaci√≥n en los \emph{niveles de madures
-SOA\cite{IBMSOAG2006}} , por lo que en niveles bajos: \ab{Porque ``:''? La frasa no parece ser terminada}
+El caso inicial de la primera iteraciÛn nos llevara a construir un
+proceso de negocio que en tÈrminos de \emph{calidad} depender· de
+cuan avanzados estemos como organizaciÛn en los \emph{niveles de madures
+SOA\cite{IBMSOAG2006}} , por lo que en niveles bajos de madurez podemos
+contrar problemas como el que se describe a continuaciÛn.
 
 \vspace{0.5cm}
-\textbf{\emph{Problema 2 - Dificultad en la estimaci√≥n de esfuerzo}}
+ \textbf{\emph{Problema 2 - Dificultad en la estimaciÛn de esfuerzo}}
 
 Al no tener definido un marco de trabajo con el que podamos valorar
-caracter√≠sticas inherentes al software BPEL (Proceso de negocio),
-tendremos poca visualizaci√≥n en varias perspectivas de la calidad
+caracterÌsticas inherentes al software BPEL (Proceso de negocio),
+tendremos poca visualizaciÛn en varias perspectivas de la calidad
 de nuestro desarrollo, por ejemplo Budnik \cite{Budnik2011} menciona
-preocupaciones como productividad , reducci√≥n de costos y riesgos
+preocupaciones como productividad , reducciÛn de costos y riesgos
 entre otras.
 
-Llegados a este punto la confianza del √°rea de negocio en el √©xito
+Llegados a este punto la confianza del ·rea de negocio en el Èxito
 del proyecto radica en la habilidades humanas que entregan los consultores
 SOA al equipo de desarrollo, que para este caso contextual finalizan
-el proceso, entregando un proceso probado finalizando as√≠ su compromiso
+el proceso, entregando un proceso probado finalizando asÌ su compromiso
 con el proyecto.
 
 \vspace{0.5cm}
-\textbf{\emph{Problema 3 - Actividades de validaci√≥n de pruebas insuficientes}}
+ \textbf{\emph{Problema 3 - Actividades de validaciÛn de pruebas insuficientes}}
 
-Para el arquitecto de TI junto con el √°rea de QA los cuales, tiene
+Para el arquitecto de TI junto con el ·rea de QA los cuales, tiene
 la responsabilidad de recibir dichas pruebas. Deben valerse de herramientas
-como inspecciones de c√≥digo para poder decidir si hay completitud
+como inspecciones de cÛdigo para poder decidir si hay completitud
 y suficiente esfuerzo de pruebas que validen la de los consultores
 y/o implementa dores de procesos. Lo que se convierte en una actividad
 que agrega esfuerzo adicional al proyecto, Lubke and Singer \cite{DanielLubke2009}
 comparten el problema al proponer un mecanismo para verificar cobertura
 de pruebas realizadas a los procesos BPEL, propuesta que es un problema
-complementario dentro de esta gran preocupaci√≥n que es la calidad.
+complementario dentro de esta gran preocupaciÛn que es la calidad.
 
-Continuando con la caracter√≠stica mencionada en la introducci√≥n de
-esta propuesta de tesis que hace referencia a la constante ``cambio‚Äù
+Continuando con la caracterÌstica mencionada en la introducciÛn de
+esta propuesta de tesis que hace referencia a la constante ``cambio\textquotedblright{}
 en el negocio, los estudios indican que el 38\% de las soluciones
-con procesos de negocio se les aplicara un proceso de redise√±o en
-toda la organizaci√≥n (Delphi Group, 2002)\ab{Hay que usar solamente uno estillo de referencia} \cite{Cardoso2008}, por
-lo que una perspectiva c√≠clica de constantes proyectos de desarrollo
-es aplicable constantemente en este ambiente de servicios y procesos.
-Esto sumado a la complejidad en la gesti√≥n de requisitos, principalmente
-debido a que la infraestructura en la que se implementan los procesos
-BPEL, esta dotada de \emph{indicadores de proceso} que permiten ajustar
-los procesos con base en su historial de desempe√±o, echo que motiva
+con procesos de negocio se les aplicara un proceso de rediseÒo en
+toda la organizaciÛn \cite{Cardoso2008,DelphiGroup2002}, por lo que
+una perspectiva cÌclica de constantes proyectos de desarrollo es aplicable
+constantemente en este ambiente de servicios y procesos. Esto sumado
+a la complejidad en la gestiÛn de requisitos, principalmente debido
+a que la infraestructura en la que se implementan los procesos BPEL,
+esta dotada de \emph{indicadores de proceso} que permiten ajustar
+los procesos con base en su historial de desempeÒo, echo que motiva
 a los ingenieros de proceso a generar nuevas actividades tanto en
-la revisi√≥n del proceso en producci√≥n como en la etapa de creaci√≥n
+la revisiÛn del proceso en producciÛn como en la etapa de creaciÛn
 del proceso. lo cual agrega un nuevo problema dentro de los actuales
-an√°lisis de procesos con los que cuentan las herramientas y es que:
+an·lisis de procesos con los que cuentan las herramientas y es que:
 
 \vspace{0.5cm}
-\textbf{\emph{Problema 4 - Indicadores est√°ticos y din√°micos insuficientes
+ \textbf{\emph{Problema 4 - Indicadores est·ticos y din·micos insuficientes
 para detectar anormalidades}}
 
-Muchos de los indicadores son de an√°lisis din√°mico (es decir m√©tricas
+Muchos de los indicadores son de an·lisis din·mico (es decir mÈtricas
 que se toman mientras el proceso es ejecutado), solo se alcanzan a
 medir en escenarios de alto nivel, entregando indicadores de caja
 negra. Por lo que estos indicadores No alcanzan a revelar causas dentro
 del contenido de los procesos. Siendo este problema parte de las actividades
-de an√°lisis din√°mico de procesos, tal como lo menciona Budnik \cite{Budnik2011}
-y tambi√©n Chang and Lee \cite{Chang2009}. Donde menciona criterios
-de calidad de servicios que son aplicables para el desempe√±o en procesos
+de an·lisis din·mico de procesos, tal como lo menciona Budnik \cite{Budnik2011}
+y tambiÈn Chang and Lee \cite{Chang2009}. Donde menciona criterios
+de calidad de servicios que son aplicables para el desempeÒo en procesos
 BPEL.
 
 Hasta este punto hemos visto que nuestras preocupaciones se centran
-en medir, evaluar y validar la correcta producci√≥n de procesos de
-negocio dentro de un ambiente controlado y orquestado por una √°rea
+en medir, evaluar y validar la correcta producciÛn de procesos de
+negocio dentro de un ambiente controlado y orquestado por una ·rea
 de procesos la cual debe preocuparse por gobernar una arquitectura
-muy compleja organizacionalmente, la figura.\ref{fig:Preocupaciones-del-Govierno}
-muestra el contexto b√°sico por lo que debe preocuparse un gobierno
+muy compleja organizacionalmente, la figura.\ref{fig:Preocupaciones-del-Gobierno}
+muestra el contexto b·sico por lo que debe preocuparse un gobierno
 de servicios: Quien toma las decisiones y ejecuta los procesos, que
-pol√≠ticas se deben aplicar en los procesos, ejemplo: timeout y de
-no repudiaci√≥n y por ultimo como todo este ambiente es orquestado
+polÌticas se deben aplicar en los procesos, ejemplo: timeout y de
+no repudiaciÛn y por ultimo como todo este ambiente es orquestado
 y controlado por los procesos.
 
+
 \begin{figure}
-\centering{}\caption{ \label{fig:Preocupaciones-del-Govierno}Preocupaciones del Gobierno
+\hspace*{-1.5in}
+\centering{}\caption{ \label{fig:Preocupaciones-del-Gobierno}Preocupaciones del Gobierno
 SOA\cite{Weir2013}}
 
 
-\raggedright{}\includegraphics[scale=0.6]{img/SOAGovernanceConcerns} 
+\centering{}\raggedright{}\includegraphics{img/SOAGovernanceConcerns2} 
 \end{figure}
 
 
 El gobierno de procesos es importante en este punto para destacar
-que si bien todos los problemas anteriormente mencionados est√°n siendo
-trabajados en distintos centros de investigaci√≥n los cuales est√°n
-produciendo herramientas metodol√≥gicas para mejorar cada problema
-lo cual es una gran avance. Sin embargo la inversi√≥n que es necesaria
+que si bien todos los problemas anteriormente mencionados est·n siendo
+trabajados en distintos centros de investigaciÛn los cuales est·n
+produciendo herramientas metodolÛgicas para mejorar cada problema
+lo cual es una gran avance. Sin embargo la inversiÛn que es necesaria
 para que estas preocupaciones sean mitigadas es muy alta, similar
-a la inversi√≥n que se necesita en un desarrollo de software tradicional
-para realizar an√°lisis,
+a la inversiÛn que se necesita en un desarrollo de software tradicional
+para realizar an·lisis,
 
 \vspace{0.5cm}
-\textbf{Problema 5 - Realizar valoraci√≥n de procesos BPEL requiere
-un enorme esfuerzo}
-\ab{Este titulo no tiene el mismo formato que los otros tÌtulos de problemas}
 
-por tanto una valoraci√≥n de software ( procesos BPEL incluidos) es
-costosa y necesita de re-ingenier√≠a \cite{Girb2011}, Adem√°s requiere
-de m√∫ltiples herramientas que solucionan cada preocupaci√≥n por separado
+
+\textbf{\emph{Problema 5 - Realizar valoraciÛn de procesos BPEL requiere
+un enorme esfuerzo }}
+
+por tanto una valoraciÛn de software ( procesos BPEL incluidos) es
+costosa y necesita de re-ingenierÌa \cite{Girb2011}, Adem·s requiere
+de m˙ltiples herramientas que solucionan cada preocupaciÛn por separado
 , por lo que se requiere de varios profesionales especializados por
 cada disciplina a mitigar.
 
 Podemos entender en este punto que las iniciativas de mejora en el
-√°rea de los lenguajes para definir procesos de negocio son un tema
-que continua desarroll√°ndose, que necesita de herramientas, m√©tricas
-y metodolog√≠as que aporten el desarrollo de mejores procesos, dentro
+·rea de los lenguajes para definir procesos de negocio son un tema
+que continua desarroll·ndose, que necesita de herramientas, mÈtricas
+y metodologÌas que aporten el desarrollo de mejores procesos, dentro
 de las cualidades de software requeridas por el negocio.
 
 \vspace{0.5cm}
-\textbf{Problema 6 - Disciplina de valoraci√≥n no es comunmente adoptada
-en el proceso de desarrollo de procesos BPEL}
+ \textbf{\emph{Problema 6 - La Disciplina de valoraciÛn no es com˙nmente
+adoptada en el proceso de desarrollo de procesos BPEL}}
 
 En ambientes empresariales estos esfuerzos independientes aun no han
-sido integrados a la metodolog√≠a de trabajo en desarrollo de procesos,
+sido integrados a la metodologÌa de trabajo en desarrollo de procesos,
 por lo que el esfuerzo en tiempo, costo y capital humano es muy significativo.
 
 Se ha demostrado en otros contextos del desarrollo de software que
 contar con herramientas que permitan visualizar diferentes perspectivas
-de arquitectura son una excelente manera de integrar la valoraci√≥n
+de arquitectura son una excelente manera de integrar la valoraciÛn
 del producto al ciclo de vida del desarrollo, caso de ejemplo es \url{www.moosetechnology.com}.
-Herramienta que tiene como prop√≥sito incrementar las opciones y la
-productividad de las valoraciones de software utilizando m√∫ltiples
+Herramienta que tiene como propÛsito incrementar las opciones y la
+productividad de las valoraciones de software utilizando m˙ltiples
 herramientas que permiten analizar las diferentes perspectivas de
 un software siendo el aspecto mas importante la capacidad de co-crear
-nuevas formas de an√°lisis adaptadas a contextos espec√≠ficos.
+nuevas formas de an·lisis adaptadas a contextos especÌficos.
 
 De esta forma si aplicamos el mismo concepto a desarrollo de procesos
 de negocio en particular a procesos BPEL tendremos la oportunidad
 de tener una plataforma en la que podamos integrar las distintas preocupaciones
-que nos habiliten mejores an√°lisis dentro de procesos de desarrollo
+que nos habiliten mejores an·lisis dentro de procesos de desarrollo
 de software orientados a procesos de negocio en la WEB.
-
-
-\section{Justificaci√≥n de la propuesta}
-
-El prop√≥sito de esta tesis se centra en la mejora de la calidad del
-software orientada a procesos desarrollados en BPEL bajo el contexto
-SOA, pero dado el nivel estrat√©gico que tiene dicha arquitectura y
-su alto impacto que tiene esta en la relaci√≥n del negocio con el √°rea
-de TI las actividades y herramientas que sean propuesta en este trabajo
-de tesis involucran tambi√©n propuestas en el proceso de desarrollo
-como parte integral de producir una herramienta de valoraci√≥n de c√≥digo
-BPEL.
-
-El constante crecimiento de esta tecnolog√≠a, principalmente ahora
-en donde la din√°mica de la industria ha permitido que la arquitectura
-SOA pueda ser implementada con menos costos operativos, ha generado
-una gran demanda por mejores estrategias para una correcta gesti√≥n
-del proceso como del desarrollo tanto en la gran industria como en
-la mediana industria.
-
-Ahora es normal ver como empresas pueden usar infraestructuras en
-la nube para usar esta tecnolog√≠a con costos muy competitivos y de
-f√°cil acceso, lo cual ha generado una gran expectativa en t√©rminos
-de integraci√≥n con otros negocios y nuevas formas de hacer servicios.
-
-En la medida que se agregue complejidad a estos procesos, las actividades
-de evaluaci√≥n y mejora de la calidad se hacen mas evidente, por lo
-que aportar con una herramienta que ayude a los ingenieros a desarrollar
-mejores procesos de negocio generar un enorme valor agregado, principalmente
-porque busca definir una infraestructura con en la que se puede seguir
-avanzando en la investigaci√≥n y en el desarrollo de nuevas formas
-de valoraci√≥n de procesos negocio en la web.
-
-Para poder cumplir con el objetivo principal es necesario utilizar
-todas las disciplinas asociadas a la ingenier√≠a del software, adicionando
-un especial esfuerzo a la disciplina de an√°lisis y dise√±o en t√©rminos
-de arquitectura dado que el principal objetivo es permitir a los ingenieros
-validar si sus dise√±os cumplen con las expectativas de los requisito
-del negocio.
-
-El principal desafi√≥ de este proyecto se centra en construir herramientas
-que \emph{visualmente permitan a el equipo de desarrollo tomar mejores
-decisiones con respecto al dise√±o de sus procesos de negocio}, lo
-cual conlleva realizar un arduo trabajo de investigaci√≥n en el estado
-del arte en indicadores, complejidad del proceso,evaluaci√≥n,ciclos
-de vida y de maduraci√≥n en procesos BPEL como en implantaci√≥n del
-paradigma SOA.
 
 
 \section{Objetivo General}
 
-Dise√±ar e implementar de una herramienta que permita la valoraci√≥n
-y el an√°lisis del dise√±o de procesos de negocio construidos en BPEL
-de forma est√°tica.
+DiseÒar e implementar de una herramienta que permita la valoraciÛn
+y el an·lisis del diseÒo de procesos de negocio construidos en BPEL
+de forma est·tica.
 
 
-\subsection{Objetivos Espec√≠ficos}
+\subsection{Objetivos EspecÌficos}
 \begin{itemize}
-\item Dise√±ar e implementar un mecanismo de navegaci√≥n y valoraci√≥n de los
+\item DiseÒar e implementar un mecanismo de navegaciÛn y valoraciÛn de los
 diferentes componentes de procesos de negocio BPEL dentro de un contexto
 SOA. 
-\item Dise√±ar e implementar una herramienta que permita de manera flexible
+\item DiseÒar e implementar una herramienta que permita de manera flexible
 generar nuevas visualizaciones de complejidad en proceso de negocio
 y sus indicadores dentro de la suite de trabajo moosetechnology. 
 \item Investigar y/o elaborar al menos 2 indicadores por cualidad de software
-relevante en la elaboraci√≥n de procesos de negocio web. 
-\item Definir un proceso metodol√≥gico b√°sico que permita realizar valoraci√≥n
+relevante en la elaboraciÛn de procesos de negocio web. 
+\item Definir un proceso metodolÛgico b·sico que permita realizar valoraciÛn
 de procesos de negocio construidos en BPEL usando la herramienta como
 eje fundamental de trabajo. 
-\item Aplicar el proceso metodol√≥gico propuesto de valoraci√≥n de procesos
+\item Aplicar el proceso metodolÛgico propuesto de valoraciÛn de procesos
 web dentro de un contexto organizacional que de como resultado documento
 de mejora a procesos BPEL. 
 \end{itemize}
 
-
-
-\section{Metodolog√≠a / Plan de trabajo}
+\section{MetodologÌa / Plan de trabajo}
 
 Ha la fecha de entrega de este documento ya se ha iniciado con una
-fase de concepci√≥n en donde se ha realizado una evaluaci√≥n de la suite
-de trabajo moosetechnology como herramienta principal de co-creaci√≥n
+fase de concepciÛn en donde se ha realizado una evaluaciÛn de la suite
+de trabajo moosetechnology como herramienta principal de co-creaciÛn
 de la herramienta. Observando que existen numerosas ventajas, para
-el an√°lisis y principalmente para la producci√≥n de herramientas de
-vizualizaci√≥n y navegabilidad de artefactos.
+el an·lisis y principalmente para la producciÛn de herramientas de
+vizualizaciÛn y navegabilidad de artefactos.
 
-Con base en el √©xito de esta primera fase en la que principalmente
-se realizaron tareas utilizando una estrategia de metodolog√≠a √°gil
-guiada por paquetes de trabajo cortos y validaci√≥n, con la que efectivamente
+Con base en el Èxito de esta primera fase en la que principalmente
+se realizaron tareas utilizando una estrategia de metodologÌa ·gil
+guiada por paquetes de trabajo cortos y validaciÛn, con la que efectivamente
 se verifico la viabilidad de la propuesta de tesis, ademas de que
-siendo este proyecto es una propuesta netamente de innovaci√≥n. Se
-concluye que optar por una estrateg√≠a iterativa e incremental guiada
-por una herramienta de gesti√≥n tipo scrum es la que mas se ajusta
+siendo este proyecto es una propuesta netamente de innovaciÛn. Se
+concluye que optar por una estrategÌa iterativa e incremental guiada
+por una herramienta de gestiÛn tipo scrum es la que mas se ajusta
 a este modelo.
 
-\textbf{Plan de trabajo General - Macroactividades}
-\ab{Quizas agregar una carta gantt para ver los progresos y tiempo de cada cosa?}
-\textbf{Seminario de tesis 1} 
-\begin{itemize}
-\item Estudiar y dominar las bases del desarrollo bajo la plataforma moosetechnology. 
-\item Estudiar y definir los diferentes indicadores y m√©tricas que existen
-hasta la fecha para la complejidad de procesos BPEL 
-\item Elaborar requisitos de usuario con base en la investigaci√≥n y necesidades
-recolectadas. 
-\item Producir el documento de avance de tesis. 
-\item Realizar charla de avance tesis I 
-\item Desarrollar y probar la versi√≥n preliminar de la herramienta. 
-\end{itemize}
-\textbf{Seminario de tesis 2} 
-\begin{itemize}
-\item Realizar pruebas asociadas a varios escenarios de negocio donde se
-usan procesos BPEL. 
-\item Definir el conjunto de actividades en donde la herramienta es de alta
-utilidad. 
-\item Dise√±ar el flujo de actividades en donde la metodolog√≠a puede ser
-implementada bajo el modelo de Madurez SOA. 
-\item Elaborar propuestas alternativas de an√°lisis con base en nuevas herramientas
-de desarrollo por ejemplo lenguaje de aspectos en BPEL. 
-\item Realizar una valoraci√≥n profesional en un contexto SOA donde se implementen
-procesos BPEL. 
-\item Producir el documento final de tesis. 
-\item Realizar defensa de tesis ( Charla de tesis II ) 
-\end{itemize}
+\textbf{Plan de trabajo General - Macroactividades} 
+
+\hspace*{-1.5in}
+\includegraphics[clip,scale=0.8]{img/Cronograma}
+
  \bibliographystyle{plain}
 \bibliography{MGTI}
- 
+
 \end{document}
