@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.1.5.4:1", "", "Dimensions", "EARoot/EA1/EA5/EA4/EA204.htm", "175.png", "23", "0", "", "Logical diagram0","{3D90B300-9742-41c0-9FB7-5EDEA2D13FC3}");
+tocTab[tocTab.length] = new Array("0.1.5.4:2", "", "«quantityKind» Frequency", "EARoot/EA1/EA5/EA4/EA206.htm", "25.png", "110", "0", "", "Object0","{23CA918D-5BC9-480e-BCB7-79E0074EB7EC}");
+tocTab[tocTab.length] = new Array("0.1.5.4:3", "", "«quantityKind» Time", "EARoot/EA1/EA5/EA4/EA207.htm", "25.png", "111", "0", "", "Object0","{0BC220CF-18C8-4946-8B6F-A4A236192049}");
+tocTab[tocTab.length] = new Array("0.1.5.4:4", "", "«quantityKind» Voltage", "EARoot/EA1/EA5/EA4/EA208.htm", "25.png", "112", "0", "", "Object0","{1C6DFB61-36D1-47b3-9328-ADDCD30B5219}");

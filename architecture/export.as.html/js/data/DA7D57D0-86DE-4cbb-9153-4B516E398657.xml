@@ -1,0 +1,9 @@
+tocTab[tocTab.length] = new Array("0.1.4:1", "", "Implementation Model", "EARoot/EA1/EA4/EA124.htm", "175.png", "18", "0", "", "Logical diagram0","{BE484435-0A9B-4f47-B0DF-C8579BCAAA91}");
+tocTab[tocTab.length] = new Array("0.1.4:2", "", "«interface» Interface1", "EARoot/EA1/EA4/EA134.htm", "8.png", "85", "0", "", "Interface0","{57CB25E0-1696-4d98-90FF-B5A5C261AD61}");
+tocTab[tocTab.length] = new Array("0.1.4.1", "1", "BpelAnalyzer-Model", "EARoot/EA1/EA4/EA126.htm", "4.png", "", "", "{254F3423-C126-423b-83D4-6404DCA0D2FF}", "Package");
+tocTab[tocTab.length] = new Array("0.1.4.2", "1", "BpelAnalyzer-Model-Actions", "EARoot/EA1/EA4/EA127.htm", "4.png", "", "", "{2EAD4E9F-C402-4d89-A5B4-0B51C0E459CF}", "Package");
+tocTab[tocTab.length] = new Array("0.1.4.3", "1", "BpelAnalyzer-Model-Metrics", "EARoot/EA1/EA4/EA128.htm", "4.png", "", "", "{0D5C2124-9F69-44ce-9F89-0DBFB00073A7}", "Package");
+tocTab[tocTab.length] = new Array("0.1.4.4", "1", "BpelAnalyzer-Model-Parser", "EARoot/EA1/EA4/EA129.htm", "4.png", "", "", "{AA51C8A6-FAE8-486c-A577-784124A68358}", "Package");
+tocTab[tocTab.length] = new Array("0.1.4.5", "1", "BpelAnalyzer-View", "EARoot/EA1/EA4/EA130.htm", "4.png", "", "", "{B5242CB9-1D4C-4e38-8CA2-93FF3F76A72E}", "Package");
+tocTab[tocTab.length] = new Array("0.1.4.6", "1", "BpelAnalyzer-Visualization", "EARoot/EA1/EA4/EA131.htm", "4.png", "", "", "{3960525C-CC1F-4d80-A5BD-A7D2DAFB04AD}", "Package");
+tocTab[tocTab.length] = new Array("0.1.4.7", "1", "BpelAnalyzerBehaviorPatterns", "EARoot/EA1/EA4/EA132.htm", "4.png", "", "", "{D5F006D6-25E7-4542-A7B0-1C608FA8B718}", "Package");

@@ -1,0 +1,7 @@
+tocTab[tocTab.length] = new Array("0.1.4.1.1:1", "", "BpelAnalyzer-Model", "EARoot/EA1/EA4/EA1/EA1/EA141.htm", "175.png", "25", "0", "", "Logical diagram0","{0A144E21-C1B4-4614-B482-C95A6D110934}");
+tocTab[tocTab.length] = new Array("0.1.4.1.1:2", "", "BPActivity", "EARoot/EA1/EA4/EA1/EA1/EA143.htm", "5.png", "119", "0", "", "Class0","{6D0486C6-EA0C-4127-A751-3BC64112FFF6}");
+tocTab[tocTab.length] = new Array("0.1.4.1.1:3", "", "BPActivityBasic", "EARoot/EA1/EA4/EA1/EA1/EA144.htm", "5.png", "120", "0", "", "Class0","{8CC92FEA-F122-4fc5-8C0A-236896A010E1}");
+tocTab[tocTab.length] = new Array("0.1.4.1.1:4", "", "BPActivityComposite", "EARoot/EA1/EA4/EA1/EA1/EA145.htm", "5.png", "122", "0", "", "Class0","{39569ACE-1576-4715-99D5-2CF5B457790A}");
+tocTab[tocTab.length] = new Array("0.1.4.1.1:5", "", "BPActivityStructured", "EARoot/EA1/EA4/EA1/EA1/EA146.htm", "5.png", "121", "0", "", "Class0","{63EC5311-BA34-4326-9B0C-0D46CB62DA69}");
+tocTab[tocTab.length] = new Array("0.1.4.1.1:6", "", "BPBPELObject", "EARoot/EA1/EA4/EA1/EA1/EA147.htm", "5.png", "118", "0", "", "Class0","{B7675A89-61BC-46a5-A4CC-238285EE14EB}");
+tocTab[tocTab.length] = new Array("0.1.4.1.1:7", "", "BPProcess", "EARoot/EA1/EA4/EA1/EA1/EA148.htm", "5.png", "124", "0", "", "Class0","{E8DD3AE5-4FD2-467d-96BE-4A64F2C35F43}");

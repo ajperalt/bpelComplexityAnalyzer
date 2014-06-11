@@ -1,0 +1,12 @@
+tocTab[tocTab.length] = new Array("0.1.3:1", "", "Design Model", "EARoot/EA1/EA3/EA108.htm", "175.png", "16", "0", "", "Logical diagram0","{7DDBEAC2-AEE0-468e-ADC9-8435BD524CD4}");
+tocTab[tocTab.length] = new Array("0.1.3:3", "", "«block» BCA", "EARoot/EA1/EA3/EA112.htm", "5.png", "130", "0", "", "Class0","{B771341B-37B9-4672-ADE3-433E81E35842}");
+tocTab[tocTab.length] = new Array("0.1.3:4", "", "«block» MooseTechnology", "EARoot/EA1/EA3/EA113.htm", "5.png", "129", "0", "", "Class0","{D4FB5B96-9C9E-4c01-8177-DA7D52FABE65}");
+tocTab[tocTab.length] = new Array("0.1.3:5", "", "«block» SOA Documents", "EARoot/EA1/EA3/EA114.htm", "5.png", "128", "0", "", "Class0","{7BBA01D1-E3C1-4da9-898B-8F342B9E5FEA}");
+tocTab[tocTab.length] = new Array("0.1.3:6", "", "«block» SOA-BUS", "EARoot/EA1/EA3/EA115.htm", "5.png", "126", "0", "", "Class0","{5667CFF2-C805-42fe-A14F-77BF94CDA358}");
+tocTab[tocTab.length] = new Array("0.1.3:7", "", "«block» WS4BPEL", "EARoot/EA1/EA3/EA116.htm", "5.png", "125", "0", "", "Class0","{3BA23EF0-50ED-410b-BB4B-7719DBAAEF9E}");
+tocTab[tocTab.length] = new Array("0.1.3:8", "", "«block» WSDL", "EARoot/EA1/EA3/EA117.htm", "5.png", "127", "0", "", "Class0","{A29641F9-3E70-47e3-99AD-A134D91441AA}");
+tocTab[tocTab.length] = new Array("0.1.3:9", "", "«block» XSD", "EARoot/EA1/EA3/EA118.htm", "5.png", "131", "0", "", "Class0","{AF348FDC-F796-4ab4-91B5-682742553E1E}");
+tocTab[tocTab.length] = new Array("0.1.3:10", "", "«block» TheSystem", "EARoot/EA1/EA3/EA121.htm", "5.png", "77", "0", "", "Class0","{C42B9E37-F256-4489-BF53-D07A3083BD99}");
+tocTab[tocTab.length] = new Array("0.1.3:2", "", "TheSystem", "EARoot/EA1/EA3/EA110.htm", "182.png", "17", "77", "", "CompositeStructure diagram0","{C96C2DC2-0E9C-4c9a-8A1C-D70195BA4185}");
+tocTab[tocTab.length] = new Array("0.1.3:11", "", "subsystem1: Sub Block 1", "EARoot/EA1/EA3/EA122.htm", "118.png", "78", "77", "", "Part0","{0BD2B5AC-EBC9-4671-AA66-A54A47C8886F}");
+tocTab[tocTab.length] = new Array("0.1.3:12", "", "subsystem2: Sub Block 2", "EARoot/EA1/EA3/EA123.htm", "118.png", "79", "77", "", "Part0","{336D7241-E25F-4f2f-AEC9-9BED7912EF99}");

@@ -1,0 +1,8 @@
+tocTab[tocTab.length] = new Array("0.1.1.4:1", "", "State Machines", "EARoot/EA1/EA1/EA4/EA66.htm", "175.png", "10", "0", "", "Logical diagram0","{7DB98115-5612-488d-9200-DA657FFF4995}");
+tocTab[tocTab.length] = new Array("0.1.1.4:3", "", "StateMachine 1", "EARoot/EA1/EA1/EA4/EA71.htm", "195.png", "42", "0", "", "StateMachine0","{9BD05325-6F3B-4d01-A69C-56237F17D274}");
+tocTab[tocTab.length] = new Array("0.1.1.4:2", "", "StateMachine 1", "EARoot/EA1/EA1/EA4/EA68.htm", "183.png", "11", "42", "", "Statechart diagram0","{56CDF73E-EDAD-4766-8F58-F3BA87AF0FB9}");
+tocTab[tocTab.length] = new Array("0.1.1.4:4", "", "Final", "EARoot/EA1/EA1/EA4/EA72.htm", "69.png", "46", "42", "", "StateNode0","{6C00DFD3-D9CA-4a9f-87AA-4CF788810166}");
+tocTab[tocTab.length] = new Array("0.1.1.4:5", "", "Init", "EARoot/EA1/EA1/EA4/EA73.htm", "20.png", "43", "42", "", "State0","{6D6681AD-A91E-4350-BA17-17CF6290C195}");
+tocTab[tocTab.length] = new Array("0.1.1.4:6", "", "Initial", "EARoot/EA1/EA1/EA4/EA74.htm", "68.png", "47", "42", "", "StateNode0","{0EF6E00D-0845-441c-9C44-FC5D331B7F37}");
+tocTab[tocTab.length] = new Array("0.1.1.4:7", "", "Running", "EARoot/EA1/EA1/EA4/EA75.htm", "20.png", "44", "42", "", "State0","{9CF4D600-7157-4667-9117-E0027C83AB20}");
+tocTab[tocTab.length] = new Array("0.1.1.4:8", "", "Stopped", "EARoot/EA1/EA1/EA4/EA76.htm", "20.png", "45", "42", "", "State0","{26E7176A-A8BE-4e65-9758-AB829A8FE30C}");

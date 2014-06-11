@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("0.1.5.3:1", "", "ConstraintBlocks", "EARoot/EA1/EA5/EA3/EA196.htm", "175.png", "22", "0", "", "Logical diagram0","{E3D0B9C5-6128-4620-BCCC-5FC05D9DC246}");
+tocTab[tocTab.length] = new Array("0.1.5.3:2", "", "«constraintBlock» SineWave", "EARoot/EA1/EA5/EA3/EA199.htm", "5.png", "104", "0", "", "Class0","{6608ADBC-5D21-42cb-93E5-1316E2226950}");
+tocTab[tocTab.length] = new Array("0.1.5.3:3", "", "a", "EARoot/EA1/EA5/EA3/EA200.htm", "118.png", "105", "104", "", "Part0","{027ED24F-D69D-4c3d-AE83-CC2B4ECFA8F2}");
+tocTab[tocTab.length] = new Array("0.1.5.3:4", "", "f", "EARoot/EA1/EA5/EA3/EA201.htm", "118.png", "106", "104", "", "Part0","{1F85BB12-64D2-40ad-A08B-15F97A88F751}");
+tocTab[tocTab.length] = new Array("0.1.5.3:5", "", "output", "EARoot/EA1/EA5/EA3/EA202.htm", "118.png", "107", "104", "", "Part0","{7A98C081-9AB3-4f8e-A0D1-98D1CFECCDBE}");
+tocTab[tocTab.length] = new Array("0.1.5.3:6", "", "t", "EARoot/EA1/EA5/EA3/EA203.htm", "118.png", "108", "104", "", "Part0","{05746270-94D8-4f24-B797-801A5C82A5A9}");

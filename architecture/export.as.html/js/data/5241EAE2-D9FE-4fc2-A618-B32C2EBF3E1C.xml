@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("0.1.5.1:1", "", "Blocks", "EARoot/EA1/EA5/EA1/EA183.htm", "175.png", "20", "0", "", "Logical diagram0","{79E53C13-E507-4a17-B644-BDB63BA52C8B}");
+tocTab[tocTab.length] = new Array("0.1.5.1:2", "", "«block» Environment", "EARoot/EA1/EA5/EA1/EA185.htm", "5.png", "92", "0", "", "Class0","{E36393D3-FE02-4447-B031-75CF28CB66DE}");
+tocTab[tocTab.length] = new Array("0.1.5.1:3", "", "«block» Sub Block 1", "EARoot/EA1/EA5/EA1/EA186.htm", "5.png", "95", "0", "", "Class0","{6E4544A3-7CA2-4628-B72C-F335B743B9D3}");
+tocTab[tocTab.length] = new Array("0.1.5.1:4", "", "«block» Sub Block 2", "EARoot/EA1/EA5/EA1/EA187.htm", "5.png", "96", "0", "", "Class0","{A4F479EE-8DEA-4b1c-B9AC-382948C36622}");
+tocTab[tocTab.length] = new Array("0.1.5.1:5", "", "«block» Noise", "EARoot/EA1/EA5/EA1/EA188.htm", "5.png", "94", "92", "", "Class0","{B88CEE73-62CF-4bb9-91F9-5979FD31FC8F}");
+tocTab[tocTab.length] = new Array("0.1.5.1:6", "", "«block» Weather", "EARoot/EA1/EA5/EA1/EA189.htm", "5.png", "93", "92", "", "Class0","{A79E7697-915E-4c5e-AE5E-4A182FB4D652}");

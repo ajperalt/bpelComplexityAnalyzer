@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.1.5.5:1", "", "Units", "EARoot/EA1/EA5/EA5/EA209.htm", "175.png", "24", "0", "", "Logical diagram0","{96FF44B2-8EA3-4547-9728-A3ABB68B9190}");
+tocTab[tocTab.length] = new Array("0.1.5.5:2", "", "«unit» Hertz", "EARoot/EA1/EA5/EA5/EA211.htm", "25.png", "114", "0", "", "Object0","{2CCF0CC1-F40E-4cf1-8A9E-5FB51991C651}");
+tocTab[tocTab.length] = new Array("0.1.5.5:3", "", "«unit» Seconds", "EARoot/EA1/EA5/EA5/EA212.htm", "25.png", "115", "0", "", "Object0","{78E52BB8-4001-47af-AD6E-F16439AFDBC4}");
+tocTab[tocTab.length] = new Array("0.1.5.5:4", "", "«unit» Volts", "EARoot/EA1/EA5/EA5/EA213.htm", "25.png", "116", "0", "", "Object0","{E72D5D96-2C29-454c-BA72-A72AD0D4E482}");

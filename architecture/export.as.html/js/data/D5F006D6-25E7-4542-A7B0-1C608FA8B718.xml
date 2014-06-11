@@ -1,0 +1,2 @@
+tocTab[tocTab.length] = new Array("0.1.4.7:1", "", "BpelAnalyzerBehaviorPatterns", "EARoot/EA1/EA4/EA7/EA170.htm", "175.png", "28", "0", "", "Logical diagram0","{F1FE3B43-F755-4381-949B-14C08859BD32}");
+tocTab[tocTab.length] = new Array("0.1.4.7:2", "", "BPAbstractVisitor", "EARoot/EA1/EA4/EA7/EA173.htm", "5.png", "135", "0", "", "Class0","{5BD6E855-FB56-4c80-95F9-FA70244DACFF}");

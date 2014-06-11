@@ -6,6 +6,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[latin9]{inputenc}
 \setcounter{tocdepth}{2}
+\usepackage[active]{srcltx}
 \usepackage{color}
 \usepackage{babel}
 \addto\shorthandsspanish{\spanishdeactivate{~<>}}
@@ -25,20 +26,14 @@
 
 \makeatletter
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
-
-
+\usepackage{babel}
 \usepackage{color}\usepackage{babel}
 \addto\shorthandsspanish{\spanishdeactivate{~<>}}
-
-\usepackage{url}
-\usepackage{breakurl}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{url}\usepackage{breakurl}
 \usepackage{babel}
+\usepackage{lscape}
 % packages
 \usepackage{xspace}\usepackage{ifthen}\usepackage{amsbsy}\usepackage{balance}\usepackage{booktabs}\usepackage{multirow}\usepackage{needspace}\usepackage{microtype}\usepackage{bold-extra}\usepackage{subfigure}\usepackage{enumerate}
-
 % references
 \usepackage[all]{hypcap}\usepackage{babel}
 \addto\shorthandsspanish{\spanishdeactivate{~<>}}
@@ -66,9 +61,6 @@
 \newcommand{\ai}[1]{\nb{Alejandro}{orange}{#1}}
 \newcommand{\on}[1]{\nb{Oscar}{olive}{#1}}
 
-
-
-
 \makeatother
 
 \begin{document}
@@ -83,7 +75,7 @@ de negocio desarrollados en BPEL}
 \author{Universidad de chile, DCC}
 
 
-\author{Alvaro Jose Peralta Ocampo}
+\author{}
 
 
 \date{Mayo 2014}
@@ -208,8 +200,8 @@ que se han estado realizando a la fecha de entrega de esta propuesta.
 
 \section{Problema a resolver / Oportunidad de Mejora}
 
-\emph{Contexto:} \emph{Análisis de procesos de negocio orientados
-a la web, en situaciones de alta complejidad, con requerimientos funcionales
+\emph{Contexto: Análisis de procesos de negocio orientados a la web,
+en situaciones de alta complejidad, con requerimientos funcionales
 cambiantes, en un entorno de arquitecturas orientadas a servicio.}
 
 La oportunidad de mejora se centra en lo que hemos llamado ``complejidad
@@ -301,17 +293,17 @@ Continuando con la característica mencionada en la introducción de
 esta propuesta de tesis que hace referencia a la constante ``cambio\textquotedblright{}
 en el negocio, los estudios indican que el 38\% de las soluciones
 con procesos de negocio se les aplicara un proceso de rediseño en
-toda la organización \cite{Cardoso2008,DelphiGroup2002}, por lo que
-una perspectiva cíclica de constantes proyectos de desarrollo es aplicable
-constantemente en este ambiente de servicios y procesos. Esto sumado
-a la complejidad en la gestión de requisitos, principalmente debido
-a que la infraestructura en la que se implementan los procesos BPEL,
-esta dotada de \emph{indicadores de proceso} que permiten ajustar
-los procesos con base en su historial de desempeño, echo que motiva
-a los ingenieros de proceso a generar nuevas actividades tanto en
-la revisión del proceso en producción como en la etapa de creación
-del proceso. lo cual agrega un nuevo problema dentro de los actuales
-análisis de procesos con los que cuentan las herramientas y es que:
+toda la organización \cite{Cardoso2008}, por lo que una perspectiva
+cíclica de constantes proyectos de desarrollo es aplicable constantemente
+en este ambiente de servicios y procesos. Esto sumado a la complejidad
+en la gestión de requisitos, principalmente debido a que la infraestructura
+en la que se implementan los procesos BPEL, esta dotada de \emph{indicadores
+de proceso} que permiten ajustar los procesos con base en su historial
+de desempeño, echo que motiva a los ingenieros de proceso a generar
+nuevas actividades tanto en la revisión del proceso en producción
+como en la etapa de creación del proceso. lo cual agrega un nuevo
+problema dentro de los actuales análisis de procesos con los que cuentan
+las herramientas y es que:
 
 \vspace{0.5cm}
  \textbf{\emph{Problema 4 - Indicadores estáticos y dinámicos insuficientes
@@ -331,21 +323,41 @@ Hasta este punto hemos visto que nuestras preocupaciones se centran
 en medir, evaluar y validar la correcta producción de procesos de
 negocio dentro de un ambiente controlado y orquestado por una área
 de procesos la cual debe preocuparse por gobernar una arquitectura
-muy compleja organizacionalmente, la figura.\ref{fig:Preocupaciones-del-Gobierno}
-muestra el contexto básico por lo que debe preocuparse un gobierno
-de servicios: Quien toma las decisiones y ejecuta los procesos, que
-políticas se deben aplicar en los procesos, ejemplo: timeout y de
-no repudiación y por ultimo como todo este ambiente es orquestado
-y controlado por los procesos.
-
-
+muy compleja organizacional mente, la figura.\ref{fig:Preocupaciones-del-Gobierno}
+muestra el contexto básico por lo que debe preocuparse la disciplina
+de gobierno de servicios, que es en esencia la responsable por la
+toma de decisiones asociadas principalmente a las siguientes preguntas: 
+\begin{enumerate}
+\item Quien toma las decisiones y ejecuta los procesos: Para responder a
+esta pregunta es necesario tener un control sobre quien debe hacer
+que actividades así como quien puede ejecutar o no los procesos de
+negocio, por lo que es indispensable comprender las relaciones que
+tienen los distintos integrantes del proceso con los artefactos que
+intervienen en el. 
+\item Que políticas se deben aplicar en los procesos, ejemplo: timeout y
+de no repudiación: Cada proceso tiene asociado cualidades de servicio
+como seguridad o metas de negocio que son designadas durante el diseño
+del proceso y deben cumplirse para que la organización pueda cumplir
+con sus objetivos. Preocuparse por determinar porque un proceso puede
+o no cumplir con dichas cualidades es complejo al tener un aumento
+significativo en la cantidad de reglas y sus relaciones. 
+\item Como todo este ambiente es orquestado y controlado por los procesos:
+La ultima pregunta representa en si mismo la labor del diseño de procesos
+de negocio, al tener que preocuparse tanto por el diseño como todas
+las preocupaciones y problemas descritos en esta propuesta. El COMO
+es la pregunta que conlleva mas esfuerzo por parte de los ingenieros
+y que tiene el mayor porcentaje de inyección de errores al ser en
+esencia una implementación de un desarrollo de software. 
+\end{enumerate}
 \begin{figure}
-\hspace*{-1.5in}
-\centering{}\caption{ \label{fig:Preocupaciones-del-Gobierno}Preocupaciones del Gobierno
+\caption{ \label{fig:Preocupaciones-del-Gobierno}Preocupaciones del Gobierno
 SOA\cite{Weir2013}}
 
 
-\centering{}\raggedright{}\includegraphics{img/SOAGovernanceConcerns2} 
+\medskip{}
+
+
+\centering{}\includegraphics[scale=0.8]{img/SOAGovernanceConcerns2} 
 \end{figure}
 
 
@@ -444,12 +456,19 @@ concluye que optar por una estrategía iterativa e incremental guiada
 por una herramienta de gestión tipo scrum es la que mas se ajusta
 a este modelo.
 
-\textbf{Plan de trabajo General - Macroactividades} 
+\begin{landscape}
 
-\hspace*{-1.5in}
-\includegraphics[clip,scale=0.8]{img/Cronograma}
+\begin{figure}
+\caption{\textbf{Plan de trabajo General - Macroactividades:}}
 
- \bibliographystyle{plain}
+
+\includegraphics[scale=0.8]{img/Cronograma}
+\end{figure}
+
+
+\end{landscape}
+
+\newpage{}  \bibliographystyle{plain}
 \bibliography{MGTI}
 
 \end{document}

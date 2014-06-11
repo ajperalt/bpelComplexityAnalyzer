@@ -1,0 +1,7 @@
+tocTab[tocTab.length] = new Array("0.1.4.4:1", "", "BpelAnalyzer-Model-Parser", "EARoot/EA1/EA4/EA4/EA157.htm", "175.png", "32", "0", "", "Logical diagram0","{5C11F656-089B-4e35-9D82-723E7A027816}");
+tocTab[tocTab.length] = new Array("0.1.4.4:2", "", "BpelAnalyzer-Model-Parser", "EARoot/EA1/EA4/EA4/EA159.htm", "185.png", "33", "0", "", "Sequence diagram0","{00F6C55E-91DA-4772-A1B2-6E2390265168}");
+tocTab[tocTab.length] = new Array("0.1.4.4:3", "", "BpelParser", "EARoot/EA1/EA4/EA4/EA161.htm", "5.png", "141", "0", "", "Class0","{42155FA6-0226-4d9c-9758-ABBEDBAF033F}");
+tocTab[tocTab.length] = new Array("0.1.4.4:4", "", "BpelParserTagsXMLRef", "EARoot/EA1/EA4/EA4/EA162.htm", "5.png", "144", "0", "", "Class0","{36CCB582-5E1E-49a5-9A62-6602FDA228D5}");
+tocTab[tocTab.length] = new Array("0.1.4.4:5", "", "BpelRefTagClass", "EARoot/EA1/EA4/EA4/EA163.htm", "5.png", "143", "0", "", "Class0","{B3A567A8-ECF5-4556-899D-720C34CFF724}");
+tocTab[tocTab.length] = new Array("0.1.4.4:6", "", "«&lt;&lt;Pharo-Class&gt;&gt;» Class", "EARoot/EA1/EA4/EA4/EA164.htm", "5.png", "145", "0", "", "Class0","{0ACCFFBD-C0EF-47f3-8B61-DA8D143771F8}");
+tocTab[tocTab.length] = new Array("0.1.4.4:7", "", "WSDLParser", "EARoot/EA1/EA4/EA4/EA165.htm", "5.png", "142", "0", "", "Class0","{DB0E7C5A-45B9-488b-A10D-0B40E9316D62}");
