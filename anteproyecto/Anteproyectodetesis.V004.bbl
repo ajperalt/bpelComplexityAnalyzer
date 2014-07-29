@@ -1,0 +1,56 @@
+\begin{thebibliography}{10}
+
+\bibitem{DelphiGroup2002}
+
+
+\bibitem{Budnik2011}
+Lukasz Budnik and Henryk Krawczyk.
+\newblock Dynamic analysis of enterprise business scenarios.
+\newblock {\em IEEE International Enterprise Distributed Object Computing
+  Conference Workshop}, 1(1):1, 2011.
+
+\bibitem{Cardoso2006}
+Jorge Cardoso.
+\newblock Complexity analysis of bpel web processes.
+\newblock {\em Software Process:Improvement and Practice Journal}, 1:10, 2006.
+
+\bibitem{Cardoso2008}
+Jorge Cardoso.
+\newblock Business processes control-flow complexity: Metric,evaluation, and
+  validation.
+\newblock {\em International Journal of Web Services Research}, 1(1):27, 2008.
+
+\bibitem{Chang2009}
+H.~Chang and K~lee.
+\newblock Quality-driven web service compositions for ubiquitous computing
+  enviroment.
+\newblock {\em International Conferences on new Trends in information and
+  services science}, 1(1):8, June 2009.
+
+\bibitem{Girb2011}
+Tudor Girba.
+\newblock {\em Lumane assessment The Missing software engineering method}.
+\newblock Humane-assestment, 2011.
+
+\bibitem{IBMSOAG2006}
+Kerrie Holley, Jim Palistrant, and Steve Graham.
+\newblock {\em Effective SOA Governance}.
+\newblock IBM, 2006.
+
+\bibitem{DanielLubke2009}
+Daniel Lubke and Leif Singer.
+\newblock Calculating bpel test coverage through instrumentation.
+\newblock {\em ICSE 09 Workshop}, 1(1):1, 2009.
+
+\bibitem{libroInteroperabilidadDCC2009}
+Claudio~Gutiérrez Sergio~F.Ochoa, Cecilia~Bastarrica, editor.
+\newblock {\em Documentación Electronica e Interoperabilidad de la
+  Informacion}.
+\newblock Universidad de Chile DCC, 2009.
+
+\bibitem{Weir2013}
+Luis~Augusto Weir and Andrew Bell.
+\newblock {\em Oracle SOA Governance 11g Implementation}.
+\newblock Packt Publishing, 2013.
+
+\end{thebibliography}
